@@ -1,3 +1,4 @@
+CREATE DATABASE Unip
 USE Unip
 
 CREATE TABLE [dbo].[Chamado](
@@ -8,7 +9,7 @@ CREATE TABLE [dbo].[Chamado](
 	[dataChamado] [date] NOT NULL,
 	[statusAtendimento] [nvarchar](30) NOT NULL,
 	foreign key (idFuncionario) references Funcionario(idFuncionario),
-	foreign key (idProblema) references Problema(idProblema),
+	foreign key (idProblema) references Problema(idProblema)
 )
 
 CREATE TABLE [dbo].[chamadoAtendimento](
@@ -27,8 +28,6 @@ CREATE TABLE [dbo].[Funcionario](
 	[nComputador] [int] NULL,
 	[email] [nvarchar](50) NOT NULL,
 	[setor] [nvarchar](30) NOT NULL,
-	[idNivelAcesso] [int] NOT NULL,
-	foreign key(idNivelAcesso) references nivelAcesso(idNivelAcesso)
 )
 
 CREATE TABLE [dbo].[Loginn](
@@ -36,6 +35,8 @@ CREATE TABLE [dbo].[Loginn](
 	idFuncionario int not null,
 	[login] [varchar](50) not NULL,
 	[senha] [varchar](50) not NULL,
+	[idNivelAcesso] [int] NOT NULL,
+	foreign key(idNivelAcesso) references nivelAcesso(idNivelAcesso),
 	foreign key(idFuncionario) references Funcionario(idFuncionario)
 )
 
