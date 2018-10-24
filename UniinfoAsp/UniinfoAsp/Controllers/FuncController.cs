@@ -5,7 +5,7 @@ namespace UniinfoAsp.Controllers
 {
     public class FuncController : Controller
     {
-        // GET: Func
+        [Authorize]
         public ActionResult Index()
         {
             return View();
