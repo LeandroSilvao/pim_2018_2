@@ -5,7 +5,7 @@ namespace UniinfoAsp.Controllers
 {
     public class FuncController : Controller
     {
-        [Authorize]
+        [Authorize(Roles = "Funcionario")]
         public ActionResult Index()
         {
             return View();

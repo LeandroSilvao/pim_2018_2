@@ -175,6 +175,7 @@
     <Compile Include="Models\Problema.cs">
       <DependentUpon>Uniinfo.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\SiteRole.cs" />
     <Compile Include="Models\Uniinfo.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

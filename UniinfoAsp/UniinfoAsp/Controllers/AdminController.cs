@@ -8,7 +8,7 @@ namespace UniinfoAsp.Controllers
 {
     public class AdminController : Controller
     {
-        [Authorize]
+        [Authorize(Roles = "Admin")]
         public ActionResult Index()
         {
             return View();
