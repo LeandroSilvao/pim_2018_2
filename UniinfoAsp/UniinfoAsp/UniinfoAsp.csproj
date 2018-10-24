@@ -154,6 +154,7 @@
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\FuncController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProblemaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -250,6 +251,11 @@
     <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="Views\Func\Index.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Problema\Create.cshtml" />
+    <Content Include="Views\Problema\Delete.cshtml" />
+    <Content Include="Views\Problema\Details.cshtml" />
+    <Content Include="Views\Problema\Edit.cshtml" />
+    <Content Include="Views\Problema\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
