@@ -16,20 +16,6 @@ namespace UniinfoAsp.Controllers
             return View(db.Problemas.ToList());
         }
 
-        // GET: Problema/Details/5
-        public ActionResult Details(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            Problema problema = db.Problemas.Find(id);
-            if (problema == null)
-            {
-                return HttpNotFound();
-            }
-            return View(problema);
-        }
 
         // GET: Problema/Create
         public ActionResult Create()
