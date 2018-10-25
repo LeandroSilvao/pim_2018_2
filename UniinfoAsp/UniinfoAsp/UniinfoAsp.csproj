@@ -152,7 +152,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\chamadoAtendimentoController.cs" />
+    <Compile Include="Controllers\ChamadoController.cs" />
     <Compile Include="Controllers\FuncController.cs" />
+    <Compile Include="Controllers\FuncionarioController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginnController.cs" />
     <Compile Include="Controllers\ProblemaController.cs" />
@@ -171,6 +174,7 @@
     <Compile Include="Models\Loginn.cs">
       <DependentUpon>Uniinfo.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\MetadataClass.cs" />
     <Compile Include="Models\nivelAcesso.cs">
       <DependentUpon>Uniinfo.tt</DependentUpon>
     </Compile>
@@ -261,6 +265,20 @@
     <Content Include="Views\Loginn\Details.cshtml" />
     <Content Include="Views\Loginn\Edit.cshtml" />
     <Content Include="Views\Loginn\Index.cshtml" />
+    <Content Include="Views\chamadoAtendimento\Create.cshtml" />
+    <Content Include="Views\chamadoAtendimento\Delete.cshtml" />
+    <Content Include="Views\chamadoAtendimento\Details.cshtml" />
+    <Content Include="Views\chamadoAtendimento\Edit.cshtml" />
+    <Content Include="Views\chamadoAtendimento\Index.cshtml" />
+    <Content Include="Views\Funcionario\Create.cshtml" />
+    <Content Include="Views\Funcionario\Delete.cshtml" />
+    <Content Include="Views\Funcionario\Edit.cshtml" />
+    <Content Include="Views\Funcionario\Index.cshtml" />
+    <Content Include="Views\Chamado\Create.cshtml" />
+    <Content Include="Views\Chamado\Delete.cshtml" />
+    <Content Include="Views\Chamado\Details.cshtml" />
+    <Content Include="Views\Chamado\Edit.cshtml" />
+    <Content Include="Views\Chamado\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

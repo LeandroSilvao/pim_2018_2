@@ -1,0 +1,53 @@
+﻿@model IEnumerable<UniinfoAsp.Models.chamadoAtendimento>
+
+@{
+    ViewBag.Title = "Chamados em atendimento";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Chamados em atendimento</h2>
+
+<p>
+    @Html.ActionLink("Adicionar chamado", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Funcionario.nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Chamado.descricao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Chamado.dataChamado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Chamado.Problema.tipoProblema)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Funcionario.nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Chamado.descricao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Chamado.dataChamado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Chamado.Problema.tipoProblema)
+        </td>
+
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id = item.idAtendimento }) |
+            @Html.ActionLink("Detalhes", "Details", new { id = item.idAtendimento }) |
+            @Html.ActionLink("Deletar", "Delete", new { id = item.idAtendimento })
+        </td>
+    </tr>
+}
+
+</table>

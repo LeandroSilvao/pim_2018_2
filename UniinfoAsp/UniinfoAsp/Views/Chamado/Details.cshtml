@@ -1,0 +1,59 @@
+﻿@model UniinfoAsp.Models.Chamado
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Chamado</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dataChamado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dataChamado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.statusAtendimento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.statusAtendimento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Funcionario.nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Funcionario.nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Problema.tipoProblema)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Problema.tipoProblema)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.idChamado }) |
+    @Html.ActionLink("Voltar", "Index")
+</p>

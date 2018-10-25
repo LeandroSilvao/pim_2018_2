@@ -1,14 +1,14 @@
 ﻿@model IEnumerable<UniinfoAsp.Models.Loginn>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Login";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<h2>Index</h2>
+<h2>Logins</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Criar novo Login", "Create")
 </p>
 <table class="table">
     <tr>
@@ -42,9 +42,9 @@
             @Html.DisplayFor(modelItem => item.nivelAcesso.tipoAcesso)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.idLogin }) |
-            @Html.ActionLink("Details", "Details", new { id=item.idLogin }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.idLogin })
+            @Html.ActionLink("Editar", "Edit", new { id = item.idLogin }) |
+            @Html.ActionLink("Detalhes", "Details", new { id = item.idLogin }) |
+            @Html.ActionLink("Deletar", "Delete", new { id = item.idLogin }) |
         </td>
     </tr>
 }
