@@ -14,7 +14,8 @@ namespace UniinfoAsp.Controllers
         public ActionResult Index()
         {
             var chamadoAtendimentoes = db.chamadoAtendimentoes.Include(c => c.Chamado).Include(c => c.Funcionario);
-            return View(chamadoAtendimentoes.ToList());
+            var chamAtend = chamadoAtendimentoes.Where(ca => ca.Chamado.statusAtendimento.Equals("Em andamento"));
+            return View(chamAtend.ToList());
         }
 
         // GET: chamadoAtendimento/Details/5
@@ -128,5 +129,6 @@ namespace UniinfoAsp.Controllers
             }
             base.Dispose(disposing);
         }
+
     }
 }

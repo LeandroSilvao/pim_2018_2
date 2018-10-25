@@ -1,14 +1,14 @@
 ﻿@model IEnumerable<UniinfoAsp.Models.Problema>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Problema";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<h2>Index</h2>
+<h2>Problema</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Adicionar novo tipo de problema", "Create")
 </p>
 <table class="table">
     <tr>
@@ -24,8 +24,9 @@
             @Html.DisplayFor(modelItem => item.tipoProblema)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.idProblema }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.idProblema })
+            @Html.ActionLink("Editar", "Edit", new { id=item.idProblema }) |
+            @Html.ActionLink("Deletar", "Delete", new { id=item.idProblema })
+
         </td>
     </tr>
 }

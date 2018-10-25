@@ -1,0 +1,57 @@
+﻿@model IEnumerable<UniinfoAsp.Models.Funcionario>
+
+@{
+    ViewBag.Title = "Funcionarios";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Funcionarios</h2>
+
+<p>
+    @Html.ActionLink("Cadastrar novo funcionario", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ramal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nComputador)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.setor)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ramal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nComputador)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.setor)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.idFuncionario }) |
+            @Html.ActionLink("Deletar", "Delete", new { id=item.idFuncionario })
+        </td>
+    </tr>
+}
+
+</table>

@@ -18,7 +18,8 @@ namespace UniinfoAsp.Controllers
         public ActionResult Index()
         {
             var chamadoes = db.Chamadoes.Include(c => c.Funcionario).Include(c => c.Problema);
-            return View(chamadoes.ToList());
+            var cham = chamadoes.Where(c => c.statusAtendimento.Equals("Aberto"));
+            return View(cham.ToList());
         }
 
         // GET: Chamado/Details/5

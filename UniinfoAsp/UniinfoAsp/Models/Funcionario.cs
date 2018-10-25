@@ -27,9 +27,13 @@ namespace UniinfoAsp.Models
         public int idFuncionario { get; set; }
         [Display(Name = "Nome")]
         public string nome { get; set; }
+        [Display(Name = "Ramal")]
         public Nullable<int> ramal { get; set; }
+        [Display(Name = "Numero do computador")]
         public Nullable<int> nComputador { get; set; }
+        [Display(Name = "Email")]
         public string email { get; set; }
+        [Display(Name = "Setor")]
         public string setor { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
