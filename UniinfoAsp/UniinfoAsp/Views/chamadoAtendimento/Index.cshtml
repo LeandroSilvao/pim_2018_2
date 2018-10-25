@@ -1,0 +1,46 @@
+﻿@model IEnumerable<UniinfoAsp.Models.chamadoAtendimento>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Colocar chamado em atendimento", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Funcionario.nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Chamado.descricao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dataAtendimento)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Funcionario.nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Chamado.descricao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.dataAtendimento)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.idAtendimento }) |
+            @Html.ActionLink("Details", "Details", new { id = item.idAtendimento }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.idAtendimento })
+        </td>
+    </tr>
+}
+
+</table>
