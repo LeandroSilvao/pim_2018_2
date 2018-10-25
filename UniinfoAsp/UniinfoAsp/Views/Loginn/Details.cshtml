@@ -1,0 +1,51 @@
+﻿@model UniinfoAsp.Models.Loginn
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Loginn</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.login)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.login)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.senha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.senha)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Funcionario.nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Funcionario.nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nivelAcesso.tipoAcesso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nivelAcesso.tipoAcesso)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idLogin }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

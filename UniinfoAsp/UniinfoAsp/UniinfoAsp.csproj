@@ -150,7 +150,12 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\FuncController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginnController.cs" />
+    <Compile Include="Controllers\ProblemaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -172,6 +177,7 @@
     <Compile Include="Models\Problema.cs">
       <DependentUpon>Uniinfo.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\SiteRole.cs" />
     <Compile Include="Models\Uniinfo.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -243,6 +249,18 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
     <Content Include="Views\Shared\_LayoutFuncionario.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Func\Index.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Problema\Create.cshtml" />
+    <Content Include="Views\Problema\Delete.cshtml" />
+    <Content Include="Views\Problema\Edit.cshtml" />
+    <Content Include="Views\Problema\Index.cshtml" />
+    <Content Include="Views\Loginn\Create.cshtml" />
+    <Content Include="Views\Loginn\Delete.cshtml" />
+    <Content Include="Views\Loginn\Details.cshtml" />
+    <Content Include="Views\Loginn\Edit.cshtml" />
+    <Content Include="Views\Loginn\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

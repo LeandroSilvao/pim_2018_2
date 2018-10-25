@@ -1,0 +1,33 @@
+﻿@model IEnumerable<UniinfoAsp.Models.Problema>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.tipoProblema)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.tipoProblema)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.idProblema }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.idProblema })
+        </td>
+    </tr>
+}
+
+</table>
