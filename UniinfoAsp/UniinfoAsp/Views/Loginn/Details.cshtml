@@ -1,11 +1,11 @@
 ﻿@model UniinfoAsp.Models.Loginn
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Detalhes";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<h2>Details</h2>
+<h2>Detalhes</h2>
 
 <div>
     <h4>Loginn</h4>
@@ -28,24 +28,24 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Funcionario.nome)
+            @Html.DisplayNameFor(model => model.Funcionario.email)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Funcionario.nome)
+            @Html.DisplayFor(model => model.Funcionario.email)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.nivelAcesso.tipoAcesso)
+            @Html.DisplayNameFor(model => model.Funcionario.nComputador)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.nivelAcesso.tipoAcesso)
+            @Html.DisplayFor(model => model.Funcionario.nComputador)
         </dd>
 
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.idLogin }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Editar", "Edit", new { id = Model.idLogin }) |
+    @Html.ActionLink("Voltar", "Index")
 </p>

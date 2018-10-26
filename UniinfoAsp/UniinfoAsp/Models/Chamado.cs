@@ -22,7 +22,7 @@ namespace UniinfoAsp.Models
             this.chamadoAtendimentoes = new HashSet<chamadoAtendimento>();
         }
 
-        [Display(Name = "Id Chamado")]
+        [Display(Name = "Chamado Id")]
         public int idChamado { get; set; }
 
         [DisplayName("Id Funcionario")]

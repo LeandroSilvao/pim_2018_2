@@ -1,4 +1,6 @@
-﻿using System.Data.Entity;
+﻿using System;
+using System.Data;
+using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Web.Mvc;
@@ -30,68 +32,6 @@ namespace UniinfoAsp.Controllers
             {
                 return HttpNotFound();
             }
-            return View(chamadoAtendimento);
-        }
-
-        // GET: chamadoAtendimento/Create
-        public ActionResult Create()
-        {
-            ViewBag.idChamado = new SelectList(db.Chamadoes, "idChamado", "descricao");
-            ViewBag.idFuncionario = new SelectList(db.Funcionarios, "idFuncionario", "nome");
-            return View();
-        }
-
-        // POST: chamadoAtendimento/Create
-        // Para se proteger de mais ataques, ative as propriedades específicas a que você quer se conectar. Para 
-        // obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "idAtendimento,idFuncionario,idChamado,dataAtendimento")] chamadoAtendimento chamadoAtendimento)
-        {
-            if (ModelState.IsValid)
-            {
-                db.chamadoAtendimentoes.Add(chamadoAtendimento);
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
-
-            ViewBag.idChamado = new SelectList(db.Chamadoes, "idChamado", "descricao", chamadoAtendimento.idChamado);
-            ViewBag.idFuncionario = new SelectList(db.Funcionarios, "idFuncionario", "nome", chamadoAtendimento.idFuncionario);
-            return View(chamadoAtendimento);
-        }
-
-        // GET: chamadoAtendimento/Edit/5
-        public ActionResult Edit(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            chamadoAtendimento chamadoAtendimento = db.chamadoAtendimentoes.Find(id);
-            if (chamadoAtendimento == null)
-            {
-                return HttpNotFound();
-            }
-            ViewBag.idChamado = new SelectList(db.Chamadoes, "idChamado", "descricao", chamadoAtendimento.idChamado);
-            ViewBag.idFuncionario = new SelectList(db.Funcionarios, "idFuncionario", "nome", chamadoAtendimento.idFuncionario);
-            return View(chamadoAtendimento);
-        }
-
-        // POST: chamadoAtendimento/Edit/5
-        // Para se proteger de mais ataques, ative as propriedades específicas a que você quer se conectar. Para 
-        // obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "idAtendimento,idFuncionario,idChamado,dataAtendimento")] chamadoAtendimento chamadoAtendimento)
-        {
-            if (ModelState.IsValid)
-            {
-                db.Entry(chamadoAtendimento).State = EntityState.Modified;
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
-            ViewBag.idChamado = new SelectList(db.Chamadoes, "idChamado", "descricao", chamadoAtendimento.idChamado);
-            ViewBag.idFuncionario = new SelectList(db.Funcionarios, "idFuncionario", "nome", chamadoAtendimento.idFuncionario);
             return View(chamadoAtendimento);
         }
 
@@ -130,5 +70,33 @@ namespace UniinfoAsp.Controllers
             base.Dispose(disposing);
         }
 
+        public ActionResult Encerrar(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            chamadoAtendimento chamadoAtendimento = db.chamadoAtendimentoes.Find(id);
+            Chamado chamadoa = db.Chamadoes.Find(id);
+            if (chamadoAtendimento == null)
+            {
+                return HttpNotFound();
+            }
+            return View(chamadoAtendimento);
+        }
+
+
+        [HttpPost, ActionName("Encerrar")]
+        [ValidateAntiForgeryToken]
+        public ActionResult EncerrarStatus(int id)
+        {
+            var chamadoAtendimento = db.chamadoAtendimentoes.Find(id);
+            chamadoAtendimento.Chamado.statusAtendimento = "Encerrado";
+            db.Entry(chamadoAtendimento).Property(ca => ca.dataAtendimento).CurrentValue = DateTime.Now;
+            db.Entry(chamadoAtendimento.Chamado).Property(c => c.statusAtendimento).IsModified = true;
+            db.SaveChanges();
+
+            return RedirectToAction("Index");
+        }
     }
 }

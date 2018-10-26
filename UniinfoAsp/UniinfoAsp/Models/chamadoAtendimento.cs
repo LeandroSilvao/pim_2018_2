@@ -11,12 +11,14 @@ namespace UniinfoAsp.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class chamadoAtendimento
     {
         public int idAtendimento { get; set; }
         public int idFuncionario { get; set; }
         public int idChamado { get; set; }
+        [Display(Name = "Data Atendimento")]
         public System.DateTime dataAtendimento { get; set; }
     
         public virtual Chamado Chamado { get; set; }

@@ -1,13 +1,12 @@
 ﻿@model UniinfoAsp.Models.Chamado
 
 @{
-    ViewBag.Title = "Deletar";
+    ViewBag.Title = "Posicionar";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<h2>Deletar</h2>
+<h2>Posicionar</h2>
 
-<h3>Deseja realmente apagar isso?</h3>
 <div>
     <h4>Chamado</h4>
     <hr />
@@ -58,7 +57,7 @@
         @Html.AntiForgeryToken()
 
         <div class="form-actions no-color">
-            <input type="submit" value="Deletar" class="btn btn-default" /> |
+            <input type="submit" value="Posicionar" class="btn btn-default" /> |
             @Html.ActionLink("Voltar", "Index")
         </div>
     }
