@@ -42,8 +42,52 @@ namespace UniinfoAsp.Models
 
     public partial class LoginnMetadata
     {
+
+        [Required(ErrorMessage = "Campo vazio", AllowEmptyStrings = false)]
+        public int idNivelAcesso { get; set; }
+
+        [Required(ErrorMessage = "Campo vazio", AllowEmptyStrings = false)]
         public string login { get; set; }
+
+        [Required(ErrorMessage = "Campo vazio", AllowEmptyStrings = false)]
         [DataType(DataType.Password)]
         public string senha { get; set; }
     }
+
+    [MetadataType(typeof(ChamadoMetadata))]
+    public partial class Chamado
+    {
+
+    }
+
+    public partial class ChamadoMetadata
+    {
+        [Required(ErrorMessage = "Campo vazio", AllowEmptyStrings = false)]
+        public int idFuncionario { get; set; }
+
+        [Required(ErrorMessage = "Campo vazio", AllowEmptyStrings = false)]
+        public int idProblema { get; set; }
+
+        [Required(ErrorMessage = "Campo vazio", AllowEmptyStrings = false)]
+        public string descricao { get; set; }
+
+        [Required(ErrorMessage = "Campo vazio", AllowEmptyStrings = false)]
+        public System.DateTime dataChamado { get; set; }
+
+        [Required(ErrorMessage = "Campo vazio", AllowEmptyStrings = false)]
+        public string statusAtendimento { get; set; }
+    }
+
+    [MetadataType(typeof(ProblemaMetadata))]
+    public partial class Problema
+    {
+
+    }
+
+    public partial class ProblemaMetadata
+    {
+        [Required(ErrorMessage = "Campo vazio", AllowEmptyStrings = false)]
+        public string tipoProblema { get; set; }
+    }
+
 }

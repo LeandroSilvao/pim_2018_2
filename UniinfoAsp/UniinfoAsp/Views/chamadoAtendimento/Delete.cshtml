@@ -1,25 +1,38 @@
 ﻿@model UniinfoAsp.Models.chamadoAtendimento
 
 @{
-    ViewBag.Title = "Delete";
+    ViewBag.Title = "Deletar";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<h2>Delete</h2>
+<h2>Deletar</h2>
 
-<h3>Are you sure you want to delete this?</h3>
+<h3>Deseja realmente apagar isso?</h3>
 <div>
     <h4>chamadoAtendimento</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.dataAtendimento)
+            @Html.DisplayNameFor(model => model.Chamado.idChamado)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.dataAtendimento)
+            @Html.DisplayFor(model => model.Chamado.idChamado)
         </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Funcionario.nome)
+        </dt>
 
+        <dd>
+            @Html.DisplayFor(model => model.Funcionario.nome)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Chamado.Problema.tipoProblema)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Chamado.Problema.tipoProblema)
+        </dd>
         <dt>
             @Html.DisplayNameFor(model => model.Chamado.descricao)
         </dt>
@@ -28,13 +41,6 @@
             @Html.DisplayFor(model => model.Chamado.descricao)
         </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Funcionario.nome)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Funcionario.nome)
-        </dd>
 
     </dl>
 
@@ -42,8 +48,8 @@
         @Html.AntiForgeryToken()
 
         <div class="form-actions no-color">
-            <input type="submit" value="Delete" class="btn btn-default" /> |
-            @Html.ActionLink("Back to List", "Index")
+            <input type="submit" value="Deletar" class="btn btn-default" /> |
+            @Html.ActionLink("Voltar", "Index")
         </div>
     }
 </div>

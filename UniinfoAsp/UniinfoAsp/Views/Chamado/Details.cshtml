@@ -1,16 +1,25 @@
 ﻿@model UniinfoAsp.Models.Chamado
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Detalhes";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<h2>Details</h2>
+<h2>Detalhes</h2>
 
 <div>
     <h4>Chamado</h4>
     <hr />
     <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Funcionario.nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Funcionario.nome)
+        </dd>
+
         <dt>
             @Html.DisplayNameFor(model => model.descricao)
         </dt>
@@ -36,14 +45,6 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Funcionario.nome)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Funcionario.nome)
-        </dd>
-
-        <dt>
             @Html.DisplayNameFor(model => model.Problema.tipoProblema)
         </dt>
 
@@ -54,6 +55,5 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Editar", "Edit", new { id = Model.idChamado }) |
     @Html.ActionLink("Voltar", "Index")
 </p>

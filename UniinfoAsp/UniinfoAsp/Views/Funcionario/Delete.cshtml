@@ -1,13 +1,13 @@
 ﻿@model UniinfoAsp.Models.Funcionario
 
 @{
-    ViewBag.Title = "Delete";
+    ViewBag.Title = "Deletar";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<h2>Delete</h2>
+<h2>Deletar</h2>
 
-<h3>Are you sure you want to delete this?</h3>
+<h3>Deseja realmente apagar isso?</h3>
 <div>
     <h4>Funcionario</h4>
     <hr />
@@ -58,8 +58,8 @@
         @Html.AntiForgeryToken()
 
         <div class="form-actions no-color">
-            <input type="submit" value="Delete" class="btn btn-default" /> |
-            @Html.ActionLink("Back to List", "Index")
+            <input type="submit" value="Deletar" class="btn btn-default" /> |
+            @Html.ActionLink("Voltar", "Index")
         </div>
     }
 </div>

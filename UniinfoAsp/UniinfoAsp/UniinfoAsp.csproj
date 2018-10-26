@@ -265,11 +265,6 @@
     <Content Include="Views\Loginn\Details.cshtml" />
     <Content Include="Views\Loginn\Edit.cshtml" />
     <Content Include="Views\Loginn\Index.cshtml" />
-    <Content Include="Views\chamadoAtendimento\Create.cshtml" />
-    <Content Include="Views\chamadoAtendimento\Delete.cshtml" />
-    <Content Include="Views\chamadoAtendimento\Details.cshtml" />
-    <Content Include="Views\chamadoAtendimento\Edit.cshtml" />
-    <Content Include="Views\chamadoAtendimento\Index.cshtml" />
     <Content Include="Views\Funcionario\Create.cshtml" />
     <Content Include="Views\Funcionario\Delete.cshtml" />
     <Content Include="Views\Funcionario\Edit.cshtml" />
@@ -277,8 +272,10 @@
     <Content Include="Views\Chamado\Create.cshtml" />
     <Content Include="Views\Chamado\Delete.cshtml" />
     <Content Include="Views\Chamado\Details.cshtml" />
-    <Content Include="Views\Chamado\Edit.cshtml" />
     <Content Include="Views\Chamado\Index.cshtml" />
+    <Content Include="Views\chamadoAtendimento\Delete.cshtml" />
+    <Content Include="Views\chamadoAtendimento\Details.cshtml" />
+    <Content Include="Views\chamadoAtendimento\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
