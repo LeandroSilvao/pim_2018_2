@@ -98,5 +98,39 @@ namespace UniinfoAsp.Controllers
             }
             base.Dispose(disposing);
         }
+
+        public ActionResult Posicionar(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Chamado chamado = db.Chamadoes.Find(id);
+            if (chamado == null)
+            {
+                return HttpNotFound();
+            }
+            return View(chamado);
+        }
+
+        [HttpPost, ActionName("Posicionar")]
+        [ValidateAntiForgeryToken]
+        public ActionResult posicionarStatus(int id)
+        {
+            var chamado = db.Chamadoes.Find(id);
+            chamado.statusAtendimento = "Em andamento";
+            db.Chamadoes.Attach(chamado);
+            db.Entry(chamado).Property(c => c.statusAtendimento).IsModified = true;
+            db.SaveChanges();
+
+            chamadoAtendimento ca = new chamadoAtendimento();
+            ca.idChamado = chamado.idChamado;
+            ca.idFuncionario = chamado.Funcionario.idFuncionario;
+            db.chamadoAtendimentoes.Add(ca);
+            db.SaveChanges();
+            db.SaveChanges();
+
+            return RedirectToAction("Index");
+        }
     }
 }

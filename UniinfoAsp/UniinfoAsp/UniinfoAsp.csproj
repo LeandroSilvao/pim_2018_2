@@ -254,7 +254,6 @@
     <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
     <Content Include="Views\Shared\_LayoutFuncionario.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
-    <Content Include="Views\Func\Index.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Problema\Create.cshtml" />
     <Content Include="Views\Problema\Delete.cshtml" />
@@ -276,6 +275,10 @@
     <Content Include="Views\chamadoAtendimento\Delete.cshtml" />
     <Content Include="Views\chamadoAtendimento\Details.cshtml" />
     <Content Include="Views\chamadoAtendimento\Index.cshtml" />
+    <Content Include="Views\Chamado\Posicionar.cshtml" />
+    <Content Include="Views\chamadoAtendimento\Encerrar.cshtml" />
+    <Content Include="Views\Func\Index.cshtml" />
+    <Content Include="Views\Func\CadastrarChamado.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

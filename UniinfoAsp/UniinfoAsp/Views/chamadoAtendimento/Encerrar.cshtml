@@ -1,0 +1,48 @@
+﻿@model UniinfoAsp.Models.chamadoAtendimento
+
+@{
+    ViewBag.Title = "Encerrar";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Encerrar</h2>
+
+<div>
+    <h4>chamadoAtendimento</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.dataAtendimento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dataAtendimento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Chamado.descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Chamado.descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Funcionario.nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Funcionario.nome)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Encerrar" class="btn btn-default" /> |
+            @Html.ActionLink("Voltar", "Index")
+        </div>
+    }
+</div>
