@@ -18,7 +18,7 @@ namespace UniinfoAsp.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public nivelAcesso()
         {
-            this.Loginns = new HashSet<Loginn>();
+            this.Loginns = new List<Loginn>();
         }
 
         public int idNivelAcesso { get; set; }
@@ -27,6 +27,6 @@ namespace UniinfoAsp.Models
         public string tipoAcesso { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Loginn> Loginns { get; set; }
+        public virtual List<Loginn> Loginns { get; set; }
     }
 }
