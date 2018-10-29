@@ -11,36 +11,29 @@ namespace UniinfoAsp.Models
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel;
-    using System.ComponentModel.DataAnnotations;
-
+    
     public partial class Funcionario
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Funcionario()
         {
-            this.Chamadoes = new List<Chamado>();
-            this.chamadoAtendimentoes = new List<chamadoAtendimento>();
-            this.Loginns = new List<Loginn>();
+            this.Chamadoes = new HashSet<Chamado>();
+            this.chamadoAtendimentoes = new HashSet<chamadoAtendimento>();
+            this.Loginns = new HashSet<Loginn>();
         }
     
         public int idFuncionario { get; set; }
-        [Display(Name = "Nome")]
         public string nome { get; set; }
-        [Display(Name = "Ramal")]
         public Nullable<int> ramal { get; set; }
-        [Display(Name = "Numero do computador")]
         public Nullable<int> nComputador { get; set; }
-        [Display(Name = "Email")]
         public string email { get; set; }
-        [Display(Name = "Setor")]
         public string setor { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual List<Chamado> Chamadoes { get; set; }
+        public virtual ICollection<Chamado> Chamadoes { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual List<chamadoAtendimento> chamadoAtendimentoes { get; set; }
+        public virtual ICollection<chamadoAtendimento> chamadoAtendimentoes { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual List<Loginn> Loginns { get; set; }
+        public virtual ICollection<Loginn> Loginns { get; set; }
     }
 }

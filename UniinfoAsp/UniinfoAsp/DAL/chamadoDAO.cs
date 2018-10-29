@@ -10,9 +10,11 @@ namespace UniinfoAsp.DAL
     {
         UnipEntities db = new UnipEntities();
 
-        public IEnumerable<Chamado> Consultar()
+        public List<Con_Chamado> Consultar()
         {
-            return db.Chamadoes.Where(c => c.statusAtendimento.Equals("Aberto")).ToList();
+            UnipEntities db = new UnipEntities();
+            var novo = db.Con_Chamado.ToList();
+            return novo;
         }
     }
 }

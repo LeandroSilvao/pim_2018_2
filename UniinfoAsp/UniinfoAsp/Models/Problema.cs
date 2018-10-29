@@ -11,23 +11,19 @@ namespace UniinfoAsp.Models
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-
+    
     public partial class Problema
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Problema()
         {
-            this.Chamadoes = new List<Chamado>();
+            this.Chamadoes = new HashSet<Chamado>();
         }
-
-        [Display(Name = "Id Problema")]
+    
         public int idProblema { get; set; }
-
-        [Display(Name = "Tipo")]
         public string tipoProblema { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual List<Chamado> Chamadoes { get; set; }
+        public virtual ICollection<Chamado> Chamadoes { get; set; }
     }
 }

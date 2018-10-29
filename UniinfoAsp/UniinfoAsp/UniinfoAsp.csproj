@@ -169,6 +169,9 @@
     <Compile Include="Models\chamadoAtendimento.cs">
       <DependentUpon>Uniinfo.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Con_Chamado.cs">
+      <DependentUpon>Uniinfo.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Funcionario.cs">
       <DependentUpon>Uniinfo.tt</DependentUpon>
     </Compile>
