@@ -18,7 +18,7 @@ namespace UniinfoAsp.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Problema()
         {
-            this.Chamadoes = new HashSet<Chamado>();
+            this.Chamadoes = new List<Chamado>();
         }
 
         [Display(Name = "Id Problema")]
@@ -28,6 +28,6 @@ namespace UniinfoAsp.Models
         public string tipoProblema { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Chamado> Chamadoes { get; set; }
+        public virtual List<Chamado> Chamadoes { get; set; }
     }
 }
