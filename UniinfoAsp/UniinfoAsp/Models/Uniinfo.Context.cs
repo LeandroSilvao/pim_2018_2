@@ -31,5 +31,6 @@ namespace UniinfoAsp.Models
         public virtual DbSet<Loginn> Loginns { get; set; }
         public virtual DbSet<nivelAcesso> nivelAcessoes { get; set; }
         public virtual DbSet<Problema> Problemas { get; set; }
+        public virtual DbSet<Con_Chamado> Con_Chamado { get; set; }
     }
 }

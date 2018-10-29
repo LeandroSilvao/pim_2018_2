@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Services;
 using UniinfoAsp.DAL;
+using UniinfoAsp.Models;
 
 namespace UniinfoAsp.WebSevice
 {
@@ -17,7 +18,7 @@ namespace UniinfoAsp.WebSevice
     // [System.Web.Script.Services.ScriptService]
     public class WebService : System.Web.Services.WebService
     {
-
+        UnipEntities unip = new UnipEntities();
         [WebMethod]
         public string HelloWorld()
         {
@@ -25,10 +26,10 @@ namespace UniinfoAsp.WebSevice
         }
 
         [WebMethod]
-        public void ConsultarChamado()
+        public List<Con_Chamado> ConsultarChamado()
         {
             chamadoDAO dao = new chamadoDAO();
-            dao.Consultar();
+            return dao.Consultar();
         }
     }
 }

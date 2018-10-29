@@ -32,7 +32,7 @@ namespace UniinfoAsp.Controllers
                 Db.SaveChanges();
                 return RedirectToAction("CadastrarChamado");
             
-            return View(Cham);
+            //return View(Cham);
         }
     }
 }

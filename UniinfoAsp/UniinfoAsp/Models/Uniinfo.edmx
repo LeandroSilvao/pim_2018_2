@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="UnipModelEntities.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="UnipModelEntities.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Chamado">
           <Key>
             <PropertyRef Name="idChamado" />
@@ -59,6 +59,20 @@
           </Key>
           <Property Name="idProblema" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="tipoProblema" Type="nvarchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Unip.dbo.Con_Chamado' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="Con_Chamado">
+          <Key>
+            <PropertyRef Name="descricao" />
+            <PropertyRef Name="dataChamado" />
+            <PropertyRef Name="statusAtendimento" />
+            <PropertyRef Name="nome" />
+          </Key>
+          <Property Name="descricao" Type="nvarchar" MaxLength="350" Nullable="false" />
+          <Property Name="dataChamado" Type="date" Nullable="false" />
+          <Property Name="statusAtendimento" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="nome" Type="nvarchar" MaxLength="50" Nullable="false" />
         </EntityType>
         <Association Name="FK__Chamado__idFunci__534D60F1">
           <End Role="Funcionario" Type="Self.Funcionario" Multiplicity="1" />
@@ -139,6 +153,14 @@
           <EntitySet Name="Loginn" EntityType="Self.Loginn" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="nivelAcesso" EntityType="Self.nivelAcesso" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Problema" EntityType="Self.Problema" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Con_Chamado" EntityType="Self.Con_Chamado" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Con_Chamado].[descricao] AS [descricao], 
+    [Con_Chamado].[dataChamado] AS [dataChamado], 
+    [Con_Chamado].[statusAtendimento] AS [statusAtendimento], 
+    [Con_Chamado].[nome] AS [nome]
+    FROM [dbo].[Con_Chamado] AS [Con_Chamado]</DefiningQuery>
+          </EntitySet>
           <AssociationSet Name="FK__Chamado__idFunci__534D60F1" Association="Self.FK__Chamado__idFunci__534D60F1">
             <End Role="Funcionario" EntitySet="Funcionario" />
             <End Role="Chamado" EntitySet="Chamado" />
@@ -164,8 +186,7 @@
             <End Role="Loginn" EntitySet="Loginn" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="UnipModelEntities" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -339,7 +360,20 @@
             <End Role="nivelAcesso" EntitySet="nivelAcessoes" />
             <End Role="Loginn" EntitySet="Loginns" />
           </AssociationSet>
+          <EntitySet Name="Con_Chamado" EntityType="UnipModelEntities.Con_Chamado" />
         </EntityContainer>
+        <EntityType Name="Con_Chamado">
+          <Key>
+            <PropertyRef Name="descricao" />
+            <PropertyRef Name="dataChamado" />
+            <PropertyRef Name="statusAtendimento" />
+            <PropertyRef Name="nome" />
+          </Key>
+          <Property Name="descricao" Type="String" Nullable="false" MaxLength="350" FixedLength="false" Unicode="true" />
+          <Property Name="dataChamado" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="statusAtendimento" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="nome" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -404,6 +438,16 @@
               <MappingFragment StoreEntitySet="Problema">
                 <ScalarProperty Name="idProblema" ColumnName="idProblema" />
                 <ScalarProperty Name="tipoProblema" ColumnName="tipoProblema" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Con_Chamado">
+            <EntityTypeMapping TypeName="UnipModelEntities.Con_Chamado">
+              <MappingFragment StoreEntitySet="Con_Chamado">
+                <ScalarProperty Name="nome" ColumnName="nome" />
+                <ScalarProperty Name="statusAtendimento" ColumnName="statusAtendimento" />
+                <ScalarProperty Name="dataChamado" ColumnName="dataChamado" />
+                <ScalarProperty Name="descricao" ColumnName="descricao" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

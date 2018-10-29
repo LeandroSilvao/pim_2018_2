@@ -17,6 +17,7 @@
         <AssociationConnector Association="UnipModelEntities.FK__chamadoAt__idFun__571DF1D5" ManuallyRouted="false" />
         <AssociationConnector Association="UnipModelEntities.FK__Loginn__idFuncio__5070F446" ManuallyRouted="false" />
         <AssociationConnector Association="UnipModelEntities.FK__Loginn__idNivelA__4F7CD00D" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="UnipModelEntities.Con_Chamado" Width="1.5" PointX="6.375" PointY="6.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
