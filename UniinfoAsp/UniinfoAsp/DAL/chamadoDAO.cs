@@ -12,7 +12,6 @@ namespace UniinfoAsp.DAL
 
         public List<Con_Chamado> Consultar()
         {
-            UnipEntities db = new UnipEntities();
             var novo = db.Con_Chamado.ToList();
             return novo;
         }

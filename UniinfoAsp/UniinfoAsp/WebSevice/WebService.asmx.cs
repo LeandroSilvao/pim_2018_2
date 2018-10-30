@@ -18,7 +18,7 @@ namespace UniinfoAsp.WebSevice
     // [System.Web.Script.Services.ScriptService]
     public class WebService : System.Web.Services.WebService
     {
-        UnipEntities unip = new UnipEntities();
+
         [WebMethod]
         public string HelloWorld()
         {
