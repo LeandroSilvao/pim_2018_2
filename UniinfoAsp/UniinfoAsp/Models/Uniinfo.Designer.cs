@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\OZ\Desktop\Unipgit\pim_2018_2\UniinfoAsp\UniinfoAsp\Models\Uniinfo.edmx'. 
+﻿// T4 code generation is enabled for model 'E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\UniinfoAsp\UniinfoAsp\Models\Uniinfo.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

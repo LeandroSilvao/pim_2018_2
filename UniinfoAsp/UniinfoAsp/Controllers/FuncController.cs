@@ -7,9 +7,13 @@ using UniinfoAsp.Models;
 
 namespace UniinfoAsp.Controllers
 {
+   
+
     [Authorize(Roles = "Funcionario")]
     public class FuncController : Controller
     {
+        
+
         UnipEntities Db = new UnipEntities();
         public ActionResult Index()
         {
@@ -18,7 +22,9 @@ namespace UniinfoAsp.Controllers
 
         public ActionResult CadastrarChamado()
         {
-            ViewBag.funcionarioId = Db.Funcionarios.ToList();
+
+            //ViewBag.funcionarioId = Db.Funcionarios.ToList();
+            ViewBag.idFuncionario = new SelectList(Db.Funcionarios.Where(x => x.nome == User.Identity.Name), "idFuncionario", "nome");
             ViewBag.problema = Db.Problemas.ToList();
             return View();
         }
@@ -32,7 +38,7 @@ namespace UniinfoAsp.Controllers
                 Db.SaveChanges();
                 return RedirectToAction("CadastrarChamado");
             
-            //return View(Cham);
+            return View(Cham);
         }
     }
 }

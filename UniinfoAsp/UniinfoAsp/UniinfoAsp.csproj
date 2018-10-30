@@ -216,8 +216,8 @@
     <Content Include="Content\Site.css" />
     <Content Include="Models\Uniinfo.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Uniinfo.Context.cs</LastGenOutput>
       <DependentUpon>Uniinfo.edmx</DependentUpon>
+      <LastGenOutput>Uniinfo.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Models\Uniinfo.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

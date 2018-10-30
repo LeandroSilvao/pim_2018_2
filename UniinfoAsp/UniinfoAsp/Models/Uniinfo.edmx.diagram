@@ -4,20 +4,20 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="3f38f0a9aa8046e28d1de99ba7f59b69" Name="Diagram1">
+      <Diagram DiagramId="a23284fd252c416e92619ffc0b105e54" Name="Diagram1">
         <EntityTypeShape EntityType="UnipModelEntities.Chamado" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
         <EntityTypeShape EntityType="UnipModelEntities.chamadoAtendimento" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="UnipModelEntities.Funcionario" Width="1.5" PointX="0.75" PointY="3.5" IsExpanded="true" />
         <EntityTypeShape EntityType="UnipModelEntities.Loginn" Width="1.5" PointX="6" PointY="3.625" IsExpanded="true" />
         <EntityTypeShape EntityType="UnipModelEntities.nivelAcesso" Width="1.5" PointX="3.75" PointY="7" IsExpanded="true" />
         <EntityTypeShape EntityType="UnipModelEntities.Problema" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
-        <AssociationConnector Association="UnipModelEntities.FK__Chamado__idFunci__534D60F1" ManuallyRouted="false" />
-        <AssociationConnector Association="UnipModelEntities.FK__Chamado__idProbl__5441852A" ManuallyRouted="false" />
-        <AssociationConnector Association="UnipModelEntities.FK__chamadoAt__idCha__5812160E" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="UnipModelEntities.Con_Chamado" Width="1.5" PointX="0.75" PointY="7.5" IsExpanded="true" />
+        <AssociationConnector Association="UnipModelEntities.FK__Chamado__idFunci__5441852A" ManuallyRouted="false" />
+        <AssociationConnector Association="UnipModelEntities.FK__Chamado__idProbl__5535A963" ManuallyRouted="false" />
+        <AssociationConnector Association="UnipModelEntities.FK__chamadoAt__idCha__5629CD9C" ManuallyRouted="false" />
         <AssociationConnector Association="UnipModelEntities.FK__chamadoAt__idFun__571DF1D5" ManuallyRouted="false" />
-        <AssociationConnector Association="UnipModelEntities.FK__Loginn__idFuncio__5070F446" ManuallyRouted="false" />
-        <AssociationConnector Association="UnipModelEntities.FK__Loginn__idNivelA__4F7CD00D" ManuallyRouted="false" />
-        <EntityTypeShape EntityType="UnipModelEntities.Con_Chamado" Width="1.5" PointX="6.375" PointY="6.75" />
+        <AssociationConnector Association="UnipModelEntities.FK__Loginn__idFuncio__5812160E" ManuallyRouted="false" />
+        <AssociationConnector Association="UnipModelEntities.FK__Loginn__idNivelA__59063A47" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
