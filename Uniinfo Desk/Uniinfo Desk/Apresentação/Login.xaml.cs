@@ -1,36 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
+using Uniinfo_Desk.Apresentação;
 
 namespace Uniinfo_Desk
 {
-    /// <summary>
-    /// Interação lógica para MainWindow.xam
-    /// </summary>
+    
     public partial class MainWindow : Window
     {
-        Apresentação.Inicio inicio = new Apresentação.Inicio();
+       Inicio Inicio = new Inicio();
 
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        private void btnLogar_Click(object sender, RoutedEventArgs e)
+     
+        private void btnLogar_Click_1(object sender, RoutedEventArgs e)
         {
-            inicio.Show();
+            Inicio.mnConsulta.Show();
             mnaLogin.Close();
+            Inicio.Grid_Loaded(sender, e);
+            
         }
     }
 }
