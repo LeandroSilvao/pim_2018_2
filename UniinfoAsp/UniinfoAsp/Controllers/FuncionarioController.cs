@@ -43,6 +43,11 @@ namespace UniinfoAsp.Controllers
             return View(funcionario);
         }
 
+        public JsonResult computadorCadastrado(int nComputador)
+        {
+            return Json(!db.Funcionarios.Any(f => f.nComputador == nComputador), JsonRequestBehavior.AllowGet);
+        }
+
         // GET: Funcionario/Edit/5
         public ActionResult Edit(int? id)
         {

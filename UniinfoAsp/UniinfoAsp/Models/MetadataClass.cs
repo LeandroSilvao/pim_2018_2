@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace UniinfoAsp.Models
@@ -24,7 +21,7 @@ namespace UniinfoAsp.Models
         public Nullable<int> ramal { get; set; }
 
         [Required(ErrorMessage = "Campo vazio", AllowEmptyStrings = false)]
-        //[Remote("nComputadorDisponivel", "Manage", ErrorMessage = "Esse computador ja está cadastrado")]
+        [Remote("computadorCadastrado", "Funcionario", ErrorMessage = "Esse computador ja está cadastrado")]
         public Nullable<int> nComputador { get; set; }
 
         [Required(ErrorMessage = "Campo vazio", AllowEmptyStrings = false)]
@@ -37,7 +34,7 @@ namespace UniinfoAsp.Models
     [MetadataType(typeof(LoginnMetadata))]
     public partial class Loginn
     {
-
+        
     }
 
     public partial class LoginnMetadata
@@ -47,6 +44,7 @@ namespace UniinfoAsp.Models
         public int idNivelAcesso { get; set; }
 
         [Required(ErrorMessage = "Campo vazio", AllowEmptyStrings = false)]
+        [System.Web.Mvc.Remote("loginExistente", "Loginn", ErrorMessage = "Login existente")]
         public string login { get; set; }
 
         [Required(ErrorMessage = "Campo vazio", AllowEmptyStrings = false)]
