@@ -40,6 +40,11 @@ namespace UniinfoAsp.Controllers
             return View(problema);
         }
 
+        public JsonResult problemaExistente(string tipoProblema)
+        {
+            return Json(!db.Problemas.Any(p => p.tipoProblema == tipoProblema), JsonRequestBehavior.AllowGet);
+        }
+
         // GET: Problema/Edit/5
         public ActionResult Edit(int? id)
         {

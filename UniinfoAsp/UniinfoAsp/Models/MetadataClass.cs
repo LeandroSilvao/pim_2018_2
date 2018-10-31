@@ -84,6 +84,7 @@ namespace UniinfoAsp.Models
 
     public partial class ProblemaMetadata
     {
+        [Remote("problemaExistente", "Problema", ErrorMessage = "Problema existente")]
         [Required(ErrorMessage = "Campo vazio", AllowEmptyStrings = false)]
         public string tipoProblema { get; set; }
     }
