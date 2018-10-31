@@ -5,7 +5,7 @@
     Layout = "~/Views/Shared/_LayoutFuncionario.cshtml";
 }
 
-<h2>CadastrarChamado</h2>
+<h2>Cadastrar Chamado</h2>
 
 
 @using (Html.BeginForm()) 
@@ -13,7 +13,7 @@
     @Html.AntiForgeryToken()
     
 <div class="form-horizontal">
-    <h4>Chamado</h4>
+    <h4>Insira as informações abaixo.</h4>
     <hr />
     @Html.ValidationSummary(true, "", new { @class = "text-danger" })
     @*<div class="form-group">
@@ -31,21 +31,21 @@
         </div>
     </div>
     <div class="form-group">
-        @Html.LabelFor(model => model.idProblema, "idProblema", htmlAttributes: new { @class = "control-label col-md-2" })
+        @Html.LabelFor(model => model.idProblema, "Problema", htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
-            @Html.DropDownList("idProblema", new SelectList(ViewBag.problema, "idProblema", "tipoProblema"), "Problema", htmlAttributes: new { @class = "form-control" })
+            @Html.DropDownList("idProblema", new SelectList(ViewBag.problema, "idProblema", "tipoProblema"), "Selecione um Problema", htmlAttributes: new { @class = "form-control" })
             @Html.ValidationMessageFor(model => model.idProblema, "", new { @class = "text-danger" })
         </div>
     </div>
     <div class="form-group">
-        @Html.LabelFor(model => model.descricao, htmlAttributes: new { @class = "control-label col-md-2" })
+        @Html.LabelFor(model => model.descricao,"Descrição", htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
             @Html.EditorFor(model => model.descricao, new { htmlAttributes = new { @class = "form-control" } })
             @Html.ValidationMessageFor(model => model.descricao, "", new { @class = "text-danger" })
         </div>
     </div>
-    @*<div class="form-group">
-            @Html.LabelFor(model => model.dataChamado, htmlAttributes: new { @class = "control-label col-md-2" })
+   @*<div class="form-group">
+            @Html.LabelFor(model => model.dataChamado, "Data Chamado", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.TextBoxFor(model => model.dataChamado, new { @Value = String.Format("{0:dd/MM/yyyy}", System.DateTime.Today) })
             </div>
@@ -58,7 +58,7 @@
         </div>*@
     <div class="form-group">
         <div class="col-md-offset-2 col-md-10">
-            <input type="submit" value="Criar" class="btn btn-default" />
+            <input type="submit" value="Cadastrar" class="btn btn-default" />
         </div>
     </div>
 </div>

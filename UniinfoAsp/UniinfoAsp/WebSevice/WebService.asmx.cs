@@ -18,7 +18,7 @@ namespace UniinfoAsp.WebSevice
     // [System.Web.Script.Services.ScriptService]
     public class WebService : System.Web.Services.WebService
     {
-
+        chamadoDAO dao = new chamadoDAO();
         [WebMethod]
         public string HelloWorld()
         {
@@ -28,8 +28,19 @@ namespace UniinfoAsp.WebSevice
         [WebMethod]
         public List<Con_Chamado> ConsultarChamado()
         {
-            chamadoDAO dao = new chamadoDAO();
             return dao.Consultar();
+        }
+
+        [WebMethod]
+        public List<Chamado> Consultar2()
+        {
+            return dao.Consultar2();
+        }
+
+        [WebMethod]
+        public string verificanivel(string loginwpf, string senhawpf)
+        {
+            return dao.verificaLogin(loginwpf, senhawpf);
         }
     }
 }

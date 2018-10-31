@@ -32,13 +32,14 @@ namespace UniinfoAsp.Controllers
         [HttpPost]
         public ActionResult CadastrarChamado(Chamado Cham)
         {
+            
                 Cham.dataChamado = System.DateTime.Now;
                 Cham.statusAtendimento = "Aberto";
                 Db.Chamadoes.Add(Cham);
                 Db.SaveChanges();
                 return RedirectToAction("CadastrarChamado");
             
-            return View(Cham);
+
         }
     }
 }

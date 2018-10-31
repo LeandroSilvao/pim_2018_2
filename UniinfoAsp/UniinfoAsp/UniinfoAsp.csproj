@@ -277,7 +277,6 @@
     <Content Include="Views\Funcionario\Delete.cshtml" />
     <Content Include="Views\Funcionario\Edit.cshtml" />
     <Content Include="Views\Funcionario\Index.cshtml" />
-    <Content Include="Views\Chamado\Create.cshtml" />
     <Content Include="Views\Chamado\Delete.cshtml" />
     <Content Include="Views\Chamado\Details.cshtml" />
     <Content Include="Views\Chamado\Index.cshtml" />

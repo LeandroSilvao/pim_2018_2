@@ -17,19 +17,19 @@ namespace UniinfoAsp.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Chamado()
         {
-            this.chamadoAtendimentoes = new HashSet<chamadoAtendimento>();
+            this.chamadoAtendimentoes = new List<chamadoAtendimento>();
         }
     
         public int idChamado { get; set; }
         public int idFuncionario { get; set; }
         public int idProblema { get; set; }
         public string descricao { get; set; }
-        public System.DateTime dataChamado { get; set; }
+        public DateTime dataChamado { get; set; }
         public string statusAtendimento { get; set; }
     
         public virtual Funcionario Funcionario { get; set; }
         public virtual Problema Problema { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<chamadoAtendimento> chamadoAtendimentoes { get; set; }
+        public virtual List<chamadoAtendimento> chamadoAtendimentoes { get; set; }
     }
 }

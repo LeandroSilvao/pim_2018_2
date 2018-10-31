@@ -5,7 +5,7 @@
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<h2>Criar</h2>
+<h2>Criar novo acesso</h2>
 
 
 @using (Html.BeginForm()) 
@@ -13,11 +13,11 @@
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h4>Loginn</h4>
+        <h4>Login</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
-            @Html.LabelFor(model => model.idFuncionario, "idFuncionario", htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.idFuncionario, "Nome do Funcionário", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("idFuncionario", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.idFuncionario, "", new { @class = "text-danger" })
@@ -25,7 +25,7 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.login, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.login,"Login", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.login, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.login, "", new { @class = "text-danger" })
@@ -33,7 +33,7 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.senha, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.senha,"Senha", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.senha, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.senha, "", new { @class = "text-danger" })
@@ -41,7 +41,7 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.idNivelAcesso, "idNivelAcesso", htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.idNivelAcesso, "Nivel Acesso", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("idNivelAcesso", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.idNivelAcesso, "", new { @class = "text-danger" })

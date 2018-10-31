@@ -17,9 +17,9 @@ namespace UniinfoAsp.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Funcionario()
         {
-            this.Chamadoes = new HashSet<Chamado>();
-            this.chamadoAtendimentoes = new HashSet<chamadoAtendimento>();
-            this.Loginns = new HashSet<Loginn>();
+            this.Chamadoes = new List<Chamado>();
+            this.chamadoAtendimentoes = new List<chamadoAtendimento>();
+            this.Loginns = new List<Loginn>();
         }
     
         public int idFuncionario { get; set; }
@@ -30,10 +30,11 @@ namespace UniinfoAsp.Models
         public string setor { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Chamado> Chamadoes { get; set; }
+        public virtual List<Chamado> Chamadoes { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<chamadoAtendimento> chamadoAtendimentoes { get; set; }
+        public virtual List<chamadoAtendimento> chamadoAtendimentoes { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Loginn> Loginns { get; set; }
+
+        public virtual List<Loginn> Loginns { get; set; }
     }
 }
