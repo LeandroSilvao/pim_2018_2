@@ -105,6 +105,763 @@ namespace Uniinfo_Desk.ServiceReference {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Chamado", Namespace="http://tempuri.org/")]
+    [System.SerializableAttribute()]
+    public partial class Chamado : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        private int idChamadoField;
+        
+        private int idFuncionarioField;
+        
+        private int idProblemaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string descricaoField;
+        
+        private System.DateTime dataChamadoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string statusAtendimentoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Uniinfo_Desk.ServiceReference.Funcionario FuncionarioField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Uniinfo_Desk.ServiceReference.Problema ProblemaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Uniinfo_Desk.ServiceReference.ArrayOfChamadoAtendimento chamadoAtendimentoesField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public int idChamado {
+            get {
+                return this.idChamadoField;
+            }
+            set {
+                if ((this.idChamadoField.Equals(value) != true)) {
+                    this.idChamadoField = value;
+                    this.RaisePropertyChanged("idChamado");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public int idFuncionario {
+            get {
+                return this.idFuncionarioField;
+            }
+            set {
+                if ((this.idFuncionarioField.Equals(value) != true)) {
+                    this.idFuncionarioField = value;
+                    this.RaisePropertyChanged("idFuncionario");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public int idProblema {
+            get {
+                return this.idProblemaField;
+            }
+            set {
+                if ((this.idProblemaField.Equals(value) != true)) {
+                    this.idProblemaField = value;
+                    this.RaisePropertyChanged("idProblema");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public string descricao {
+            get {
+                return this.descricaoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.descricaoField, value) != true)) {
+                    this.descricaoField = value;
+                    this.RaisePropertyChanged("descricao");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=4)]
+        public System.DateTime dataChamado {
+            get {
+                return this.dataChamadoField;
+            }
+            set {
+                if ((this.dataChamadoField.Equals(value) != true)) {
+                    this.dataChamadoField = value;
+                    this.RaisePropertyChanged("dataChamado");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
+        public string statusAtendimento {
+            get {
+                return this.statusAtendimentoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.statusAtendimentoField, value) != true)) {
+                    this.statusAtendimentoField = value;
+                    this.RaisePropertyChanged("statusAtendimento");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=6)]
+        public Uniinfo_Desk.ServiceReference.Funcionario Funcionario {
+            get {
+                return this.FuncionarioField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FuncionarioField, value) != true)) {
+                    this.FuncionarioField = value;
+                    this.RaisePropertyChanged("Funcionario");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=7)]
+        public Uniinfo_Desk.ServiceReference.Problema Problema {
+            get {
+                return this.ProblemaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ProblemaField, value) != true)) {
+                    this.ProblemaField = value;
+                    this.RaisePropertyChanged("Problema");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=8)]
+        public Uniinfo_Desk.ServiceReference.ArrayOfChamadoAtendimento chamadoAtendimentoes {
+            get {
+                return this.chamadoAtendimentoesField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.chamadoAtendimentoesField, value) != true)) {
+                    this.chamadoAtendimentoesField = value;
+                    this.RaisePropertyChanged("chamadoAtendimentoes");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Funcionario", Namespace="http://tempuri.org/")]
+    [System.SerializableAttribute()]
+    public partial class Funcionario : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        private int idFuncionarioField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string nomeField;
+        
+        private System.Nullable<int> ramalField;
+        
+        private System.Nullable<int> nComputadorField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string emailField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string setorField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Uniinfo_Desk.ServiceReference.Chamado[] ChamadoesField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Uniinfo_Desk.ServiceReference.ArrayOfChamadoAtendimento chamadoAtendimentoesField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Uniinfo_Desk.ServiceReference.Loginn[] LoginnsField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public int idFuncionario {
+            get {
+                return this.idFuncionarioField;
+            }
+            set {
+                if ((this.idFuncionarioField.Equals(value) != true)) {
+                    this.idFuncionarioField = value;
+                    this.RaisePropertyChanged("idFuncionario");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string nome {
+            get {
+                return this.nomeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.nomeField, value) != true)) {
+                    this.nomeField = value;
+                    this.RaisePropertyChanged("nome");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public System.Nullable<int> ramal {
+            get {
+                return this.ramalField;
+            }
+            set {
+                if ((this.ramalField.Equals(value) != true)) {
+                    this.ramalField = value;
+                    this.RaisePropertyChanged("ramal");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=3)]
+        public System.Nullable<int> nComputador {
+            get {
+                return this.nComputadorField;
+            }
+            set {
+                if ((this.nComputadorField.Equals(value) != true)) {
+                    this.nComputadorField = value;
+                    this.RaisePropertyChanged("nComputador");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
+        public string email {
+            get {
+                return this.emailField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.emailField, value) != true)) {
+                    this.emailField = value;
+                    this.RaisePropertyChanged("email");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
+        public string setor {
+            get {
+                return this.setorField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.setorField, value) != true)) {
+                    this.setorField = value;
+                    this.RaisePropertyChanged("setor");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=6)]
+        public Uniinfo_Desk.ServiceReference.Chamado[] Chamadoes {
+            get {
+                return this.ChamadoesField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ChamadoesField, value) != true)) {
+                    this.ChamadoesField = value;
+                    this.RaisePropertyChanged("Chamadoes");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=7)]
+        public Uniinfo_Desk.ServiceReference.ArrayOfChamadoAtendimento chamadoAtendimentoes {
+            get {
+                return this.chamadoAtendimentoesField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.chamadoAtendimentoesField, value) != true)) {
+                    this.chamadoAtendimentoesField = value;
+                    this.RaisePropertyChanged("chamadoAtendimentoes");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=8)]
+        public Uniinfo_Desk.ServiceReference.Loginn[] Loginns {
+            get {
+                return this.LoginnsField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LoginnsField, value) != true)) {
+                    this.LoginnsField = value;
+                    this.RaisePropertyChanged("Loginns");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Problema", Namespace="http://tempuri.org/")]
+    [System.SerializableAttribute()]
+    public partial class Problema : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        private int idProblemaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string tipoProblemaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Uniinfo_Desk.ServiceReference.Chamado[] ChamadoesField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public int idProblema {
+            get {
+                return this.idProblemaField;
+            }
+            set {
+                if ((this.idProblemaField.Equals(value) != true)) {
+                    this.idProblemaField = value;
+                    this.RaisePropertyChanged("idProblema");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string tipoProblema {
+            get {
+                return this.tipoProblemaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.tipoProblemaField, value) != true)) {
+                    this.tipoProblemaField = value;
+                    this.RaisePropertyChanged("tipoProblema");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public Uniinfo_Desk.ServiceReference.Chamado[] Chamadoes {
+            get {
+                return this.ChamadoesField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ChamadoesField, value) != true)) {
+                    this.ChamadoesField = value;
+                    this.RaisePropertyChanged("Chamadoes");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.CollectionDataContractAttribute(Name="ArrayOfChamadoAtendimento", Namespace="http://tempuri.org/", ItemName="chamadoAtendimento")]
+    [System.SerializableAttribute()]
+    public class ArrayOfChamadoAtendimento : System.Collections.Generic.List<Uniinfo_Desk.ServiceReference.chamadoAtendimento> {
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Loginn", Namespace="http://tempuri.org/")]
+    [System.SerializableAttribute()]
+    public partial class Loginn : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        private int idLoginField;
+        
+        private int idFuncionarioField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string loginField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string senhaField;
+        
+        private int idNivelAcessoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Uniinfo_Desk.ServiceReference.Funcionario FuncionarioField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Uniinfo_Desk.ServiceReference.nivelAcesso nivelAcessoField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public int idLogin {
+            get {
+                return this.idLoginField;
+            }
+            set {
+                if ((this.idLoginField.Equals(value) != true)) {
+                    this.idLoginField = value;
+                    this.RaisePropertyChanged("idLogin");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=1)]
+        public int idFuncionario {
+            get {
+                return this.idFuncionarioField;
+            }
+            set {
+                if ((this.idFuncionarioField.Equals(value) != true)) {
+                    this.idFuncionarioField = value;
+                    this.RaisePropertyChanged("idFuncionario");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string login {
+            get {
+                return this.loginField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.loginField, value) != true)) {
+                    this.loginField = value;
+                    this.RaisePropertyChanged("login");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public string senha {
+            get {
+                return this.senhaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.senhaField, value) != true)) {
+                    this.senhaField = value;
+                    this.RaisePropertyChanged("senha");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=4)]
+        public int idNivelAcesso {
+            get {
+                return this.idNivelAcessoField;
+            }
+            set {
+                if ((this.idNivelAcessoField.Equals(value) != true)) {
+                    this.idNivelAcessoField = value;
+                    this.RaisePropertyChanged("idNivelAcesso");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
+        public Uniinfo_Desk.ServiceReference.Funcionario Funcionario {
+            get {
+                return this.FuncionarioField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FuncionarioField, value) != true)) {
+                    this.FuncionarioField = value;
+                    this.RaisePropertyChanged("Funcionario");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=6)]
+        public Uniinfo_Desk.ServiceReference.nivelAcesso nivelAcesso {
+            get {
+                return this.nivelAcessoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.nivelAcessoField, value) != true)) {
+                    this.nivelAcessoField = value;
+                    this.RaisePropertyChanged("nivelAcesso");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="chamadoAtendimento", Namespace="http://tempuri.org/")]
+    [System.SerializableAttribute()]
+    public partial class chamadoAtendimento : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        private int idAtendimentoField;
+        
+        private int idFuncionarioField;
+        
+        private int idChamadoField;
+        
+        private System.DateTime dataAtendimentoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Uniinfo_Desk.ServiceReference.Chamado ChamadoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Uniinfo_Desk.ServiceReference.Funcionario FuncionarioField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public int idAtendimento {
+            get {
+                return this.idAtendimentoField;
+            }
+            set {
+                if ((this.idAtendimentoField.Equals(value) != true)) {
+                    this.idAtendimentoField = value;
+                    this.RaisePropertyChanged("idAtendimento");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public int idFuncionario {
+            get {
+                return this.idFuncionarioField;
+            }
+            set {
+                if ((this.idFuncionarioField.Equals(value) != true)) {
+                    this.idFuncionarioField = value;
+                    this.RaisePropertyChanged("idFuncionario");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=2)]
+        public int idChamado {
+            get {
+                return this.idChamadoField;
+            }
+            set {
+                if ((this.idChamadoField.Equals(value) != true)) {
+                    this.idChamadoField = value;
+                    this.RaisePropertyChanged("idChamado");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=3)]
+        public System.DateTime dataAtendimento {
+            get {
+                return this.dataAtendimentoField;
+            }
+            set {
+                if ((this.dataAtendimentoField.Equals(value) != true)) {
+                    this.dataAtendimentoField = value;
+                    this.RaisePropertyChanged("dataAtendimento");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
+        public Uniinfo_Desk.ServiceReference.Chamado Chamado {
+            get {
+                return this.ChamadoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ChamadoField, value) != true)) {
+                    this.ChamadoField = value;
+                    this.RaisePropertyChanged("Chamado");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
+        public Uniinfo_Desk.ServiceReference.Funcionario Funcionario {
+            get {
+                return this.FuncionarioField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FuncionarioField, value) != true)) {
+                    this.FuncionarioField = value;
+                    this.RaisePropertyChanged("Funcionario");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="nivelAcesso", Namespace="http://tempuri.org/")]
+    [System.SerializableAttribute()]
+    public partial class nivelAcesso : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        private int idNivelAcessoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string tipoAcessoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Uniinfo_Desk.ServiceReference.Loginn[] LoginnsField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public int idNivelAcesso {
+            get {
+                return this.idNivelAcessoField;
+            }
+            set {
+                if ((this.idNivelAcessoField.Equals(value) != true)) {
+                    this.idNivelAcessoField = value;
+                    this.RaisePropertyChanged("idNivelAcesso");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string tipoAcesso {
+            get {
+                return this.tipoAcessoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.tipoAcessoField, value) != true)) {
+                    this.tipoAcessoField = value;
+                    this.RaisePropertyChanged("tipoAcesso");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public Uniinfo_Desk.ServiceReference.Loginn[] Loginns {
+            get {
+                return this.LoginnsField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LoginnsField, value) != true)) {
+                    this.LoginnsField = value;
+                    this.RaisePropertyChanged("Loginns");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference.WebServiceSoap")]
     public interface WebServiceSoap {
@@ -122,6 +879,20 @@ namespace Uniinfo_Desk.ServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ConsultarChamado", ReplyAction="*")]
         System.Threading.Tasks.Task<Uniinfo_Desk.ServiceReference.ConsultarChamadoResponse> ConsultarChamadoAsync(Uniinfo_Desk.ServiceReference.ConsultarChamadoRequest request);
+        
+        // CODEGEN: Gerando contrato de mensagem porque o nome do elemento Consultar2Result no namespace http://tempuri.org/ não está marcado como nulo
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Consultar2", ReplyAction="*")]
+        Uniinfo_Desk.ServiceReference.Consultar2Response Consultar2(Uniinfo_Desk.ServiceReference.Consultar2Request request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Consultar2", ReplyAction="*")]
+        System.Threading.Tasks.Task<Uniinfo_Desk.ServiceReference.Consultar2Response> Consultar2Async(Uniinfo_Desk.ServiceReference.Consultar2Request request);
+        
+        // CODEGEN: Gerando contrato de mensagem porque o nome do elemento loginwpf no namespace http://tempuri.org/ não está marcado como nulo
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/verificanivel", ReplyAction="*")]
+        Uniinfo_Desk.ServiceReference.verificanivelResponse verificanivel(Uniinfo_Desk.ServiceReference.verificanivelRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/verificanivel", ReplyAction="*")]
+        System.Threading.Tasks.Task<Uniinfo_Desk.ServiceReference.verificanivelResponse> verificanivelAsync(Uniinfo_Desk.ServiceReference.verificanivelRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -246,6 +1017,139 @@ namespace Uniinfo_Desk.ServiceReference {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class Consultar2Request {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="Consultar2", Namespace="http://tempuri.org/", Order=0)]
+        public Uniinfo_Desk.ServiceReference.Consultar2RequestBody Body;
+        
+        public Consultar2Request() {
+        }
+        
+        public Consultar2Request(Uniinfo_Desk.ServiceReference.Consultar2RequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute()]
+    public partial class Consultar2RequestBody {
+        
+        public Consultar2RequestBody() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class Consultar2Response {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="Consultar2Response", Namespace="http://tempuri.org/", Order=0)]
+        public Uniinfo_Desk.ServiceReference.Consultar2ResponseBody Body;
+        
+        public Consultar2Response() {
+        }
+        
+        public Consultar2Response(Uniinfo_Desk.ServiceReference.Consultar2ResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class Consultar2ResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public Uniinfo_Desk.ServiceReference.Chamado[] Consultar2Result;
+        
+        public Consultar2ResponseBody() {
+        }
+        
+        public Consultar2ResponseBody(Uniinfo_Desk.ServiceReference.Chamado[] Consultar2Result) {
+            this.Consultar2Result = Consultar2Result;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class verificanivelRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="verificanivel", Namespace="http://tempuri.org/", Order=0)]
+        public Uniinfo_Desk.ServiceReference.verificanivelRequestBody Body;
+        
+        public verificanivelRequest() {
+        }
+        
+        public verificanivelRequest(Uniinfo_Desk.ServiceReference.verificanivelRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class verificanivelRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string loginwpf;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string senhawpf;
+        
+        public verificanivelRequestBody() {
+        }
+        
+        public verificanivelRequestBody(string loginwpf, string senhawpf) {
+            this.loginwpf = loginwpf;
+            this.senhawpf = senhawpf;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class verificanivelResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="verificanivelResponse", Namespace="http://tempuri.org/", Order=0)]
+        public Uniinfo_Desk.ServiceReference.verificanivelResponseBody Body;
+        
+        public verificanivelResponse() {
+        }
+        
+        public verificanivelResponse(Uniinfo_Desk.ServiceReference.verificanivelResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class verificanivelResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string verificanivelResult;
+        
+        public verificanivelResponseBody() {
+        }
+        
+        public verificanivelResponseBody(string verificanivelResult) {
+            this.verificanivelResult = verificanivelResult;
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface WebServiceSoapChannel : Uniinfo_Desk.ServiceReference.WebServiceSoap, System.ServiceModel.IClientChannel {
     }
@@ -317,6 +1221,56 @@ namespace Uniinfo_Desk.ServiceReference {
             Uniinfo_Desk.ServiceReference.ConsultarChamadoRequest inValue = new Uniinfo_Desk.ServiceReference.ConsultarChamadoRequest();
             inValue.Body = new Uniinfo_Desk.ServiceReference.ConsultarChamadoRequestBody();
             return ((Uniinfo_Desk.ServiceReference.WebServiceSoap)(this)).ConsultarChamadoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Uniinfo_Desk.ServiceReference.Consultar2Response Uniinfo_Desk.ServiceReference.WebServiceSoap.Consultar2(Uniinfo_Desk.ServiceReference.Consultar2Request request) {
+            return base.Channel.Consultar2(request);
+        }
+        
+        public Uniinfo_Desk.ServiceReference.Chamado[] Consultar2() {
+            Uniinfo_Desk.ServiceReference.Consultar2Request inValue = new Uniinfo_Desk.ServiceReference.Consultar2Request();
+            inValue.Body = new Uniinfo_Desk.ServiceReference.Consultar2RequestBody();
+            Uniinfo_Desk.ServiceReference.Consultar2Response retVal = ((Uniinfo_Desk.ServiceReference.WebServiceSoap)(this)).Consultar2(inValue);
+            return retVal.Body.Consultar2Result;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Uniinfo_Desk.ServiceReference.Consultar2Response> Uniinfo_Desk.ServiceReference.WebServiceSoap.Consultar2Async(Uniinfo_Desk.ServiceReference.Consultar2Request request) {
+            return base.Channel.Consultar2Async(request);
+        }
+        
+        public System.Threading.Tasks.Task<Uniinfo_Desk.ServiceReference.Consultar2Response> Consultar2Async() {
+            Uniinfo_Desk.ServiceReference.Consultar2Request inValue = new Uniinfo_Desk.ServiceReference.Consultar2Request();
+            inValue.Body = new Uniinfo_Desk.ServiceReference.Consultar2RequestBody();
+            return ((Uniinfo_Desk.ServiceReference.WebServiceSoap)(this)).Consultar2Async(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Uniinfo_Desk.ServiceReference.verificanivelResponse Uniinfo_Desk.ServiceReference.WebServiceSoap.verificanivel(Uniinfo_Desk.ServiceReference.verificanivelRequest request) {
+            return base.Channel.verificanivel(request);
+        }
+        
+        public string verificanivel(string loginwpf, string senhawpf) {
+            Uniinfo_Desk.ServiceReference.verificanivelRequest inValue = new Uniinfo_Desk.ServiceReference.verificanivelRequest();
+            inValue.Body = new Uniinfo_Desk.ServiceReference.verificanivelRequestBody();
+            inValue.Body.loginwpf = loginwpf;
+            inValue.Body.senhawpf = senhawpf;
+            Uniinfo_Desk.ServiceReference.verificanivelResponse retVal = ((Uniinfo_Desk.ServiceReference.WebServiceSoap)(this)).verificanivel(inValue);
+            return retVal.Body.verificanivelResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Uniinfo_Desk.ServiceReference.verificanivelResponse> Uniinfo_Desk.ServiceReference.WebServiceSoap.verificanivelAsync(Uniinfo_Desk.ServiceReference.verificanivelRequest request) {
+            return base.Channel.verificanivelAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Uniinfo_Desk.ServiceReference.verificanivelResponse> verificanivelAsync(string loginwpf, string senhawpf) {
+            Uniinfo_Desk.ServiceReference.verificanivelRequest inValue = new Uniinfo_Desk.ServiceReference.verificanivelRequest();
+            inValue.Body = new Uniinfo_Desk.ServiceReference.verificanivelRequestBody();
+            inValue.Body.loginwpf = loginwpf;
+            inValue.Body.senhawpf = senhawpf;
+            return ((Uniinfo_Desk.ServiceReference.WebServiceSoap)(this)).verificanivelAsync(inValue);
         }
     }
 }

@@ -16,13 +16,13 @@
                 <ImageBrush ImageSource="Imagens/download.png" TileMode="Tile" Opacity="400"/>
             </Button.Background>
         </Button>
-        <Button x:Name="btnExibirChamado" Content="Exibir Chamado" HorizontalAlignment="Left" Margin="500,365,0,0" VerticalAlignment="Top" Width="146" IsDefault="True" Height="26" Background="#FF1232FF" BorderBrush="#00000000" Click="btnLogar_Click_1" FontWeight="Medium" FontStretch="Condensed" TextOptions.TextHintingMode="Animated" FontFamily="Yu Gothic UI">
+        <Button x:Name="btnExibirChamado" Content="Atualizar Lista" HorizontalAlignment="Left" Margin="500,365,0,0" VerticalAlignment="Top" Width="146" IsDefault="True" Height="26" Background="#FF1232FF" BorderBrush="#00000000" Click="btnLogar_Click_1" FontWeight="Medium" FontStretch="Condensed" TextOptions.TextHintingMode="Animated" FontFamily="Yu Gothic UI">
             <Button.Effect>
                 <DropShadowEffect RenderingBias="Quality" ShadowDepth="1" Color="#FF1232FF"/>
             </Button.Effect>
         </Button>
         <DataGrid HorizontalAlignment="Left" Height="100" Margin="338,160,0,0" VerticalAlignment="Top" Width="100"/>
-        <DataGrid x:Name="grid" HorizontalAlignment="Left" Height="315" Margin="10,26,0,0" VerticalAlignment="Top" Width="1112" SelectionChanged="DataGrid_SelectionChanged" MinColumnWidth="1" CanUserReorderColumns="False" RowHeaderWidth="NaN" SelectionUnit="FullRow" EnableColumnVirtualization="True" EnableRowVirtualization="False" IsEnabled="False"/>
+        <DataGrid x:Name="grid" HorizontalAlignment="Left" Height="315" Margin="10,26,0,0" VerticalAlignment="Top" Width="1112" SelectionChanged="DataGrid_SelectionChanged" MinColumnWidth="1" CanUserReorderColumns="False" RowHeaderWidth="NaN" SelectionUnit="FullRow" EnableColumnVirtualization="True" EnableRowVirtualization="False" Focusable="False"/>
 
     </Grid>
 </Window>

@@ -110,6 +110,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Connected Services\ServiceReference\Uniinfo_Desk.ServiceReference.Chamado.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference\Uniinfo_Desk.ServiceReference.Consultar2Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\ServiceReference\Uniinfo_Desk.ServiceReference.ConsultarChamadoResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -117,6 +123,9 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServiceReference\Uniinfo_Desk.ServiceReference.HelloWorldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference\Uniinfo_Desk.ServiceReference.verificanivelResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServiceReference\WebService.wsdl" />

@@ -10,9 +10,12 @@ namespace Uniinfo_Desk.Apresentação
     {
         
         
+        
         public Inicio()
         {
             InitializeComponent();
+            
+
         }
 
        
@@ -45,7 +48,6 @@ namespace Uniinfo_Desk.Apresentação
             }
             catch (System.Exception)
             {
-
                 MessageBox.Show("Falha na Conexão com o Web Service");
             }
             
