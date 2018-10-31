@@ -63,6 +63,11 @@ namespace UniinfoAsp.Controllers
             return View(loginn);
         }
 
+        //public JsonResult permitirLogin(string login)
+        //{
+        //    return Json
+        //}
+
         // GET: Loginn/Edit/5
         public ActionResult Edit(int? id)
         {

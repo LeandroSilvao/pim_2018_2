@@ -24,7 +24,7 @@ namespace UniinfoAsp.Models
         public int idFuncionario { get; set; }
         public int idProblema { get; set; }
         public string descricao { get; set; }
-        public DateTime dataChamado { get; set; }
+        public System.DateTime dataChamado { get; set; }
         public string statusAtendimento { get; set; }
     
         public virtual Funcionario Funcionario { get; set; }

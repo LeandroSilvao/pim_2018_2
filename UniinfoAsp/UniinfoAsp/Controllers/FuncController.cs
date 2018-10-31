@@ -23,8 +23,8 @@ namespace UniinfoAsp.Controllers
         public ActionResult CadastrarChamado()
         {
 
-            //ViewBag.funcionarioId = Db.Funcionarios.ToList();
-            ViewBag.idFuncionario = new SelectList(Db.Funcionarios.Where(x => x.nome == User.Identity.Name), "idFuncionario", "nome");
+            ViewBag.funcionarioId = Db.Funcionarios.ToList();
+            //ViewBag.idFuncionario = new SelectList(Db.Funcionarios.Where(x => x.nome == User.Identity.Name), "idFuncionario", "nome");
             ViewBag.problema = Db.Problemas.ToList();
             return View();
         }
