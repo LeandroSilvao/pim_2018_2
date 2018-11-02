@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows;
 using Uniinfo_Desk.Apresentação;
-using Uniinfo_Desk.ServiceReference;
+using Uniinfo_Desk.ServiceReference2;
 
 namespace Uniinfo_Desk
 {
@@ -10,23 +10,17 @@ namespace Uniinfo_Desk
     {
        Inicio Inicio = new Inicio();
         
-
         public MainWindow()
         {
             InitializeComponent();
             
         }
-
      
         private void btnLogar_Click_1(object sender, RoutedEventArgs e)
         {
-           
-            
             try
             {
                 WebServiceSoapClient obj = new WebServiceSoapClient();
-
-
 
                 string Status = obj.verificanivel(this.txbUsuário.Text, this.psdSenha.Password.ToString());
                 if (Status == "true")
@@ -42,10 +36,6 @@ namespace Uniinfo_Desk
             {
                 MessageBox.Show("Falha na conexão com o servidor de Login");
             }
-
-            
-
-
         }
 
         private void txbSenha_PasswordChanged(object sender, RoutedEventArgs e)

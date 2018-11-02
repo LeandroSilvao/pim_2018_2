@@ -46,3 +46,33 @@ C:\Users\OZ\Desktop\gitpim\pim_2018_2\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinf
 C:\Users\OZ\Desktop\gitpim\pim_2018_2\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinfo Desk.csproj.CopyComplete
 C:\Users\OZ\Desktop\gitpim\pim_2018_2\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinfo Desk.exe
 C:\Users\OZ\Desktop\gitpim\pim_2018_2\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinfo Desk.pdb
+C:\Users\OZ\Documents\GitHub0111\pim_2018_2\Uniinfo Desk\Uniinfo Desk\bin\Debug\Uniinfo Desk.exe.config
+C:\Users\OZ\Documents\GitHub0111\pim_2018_2\Uniinfo Desk\Uniinfo Desk\bin\Debug\Uniinfo Desk.exe
+C:\Users\OZ\Documents\GitHub0111\pim_2018_2\Uniinfo Desk\Uniinfo Desk\bin\Debug\Uniinfo Desk.pdb
+C:\Users\OZ\Documents\GitHub0111\pim_2018_2\Uniinfo Desk\Uniinfo Desk\bin\Debug\MaterialDesignColors.dll
+C:\Users\OZ\Documents\GitHub0111\pim_2018_2\Uniinfo Desk\Uniinfo Desk\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\OZ\Documents\GitHub0111\pim_2018_2\Uniinfo Desk\Uniinfo Desk\bin\Debug\MaterialDesignColors.pdb
+C:\Users\OZ\Documents\GitHub0111\pim_2018_2\Uniinfo Desk\Uniinfo Desk\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\OZ\Documents\GitHub0111\pim_2018_2\Uniinfo Desk\Uniinfo Desk\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\OZ\Documents\GitHub0111\pim_2018_2\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinfo Desk.csprojAssemblyReference.cache
+C:\Users\OZ\Documents\GitHub0111\pim_2018_2\Uniinfo Desk\Uniinfo Desk\obj\Debug\Apresentação\Inicio.g.cs
+C:\Users\OZ\Documents\GitHub0111\pim_2018_2\Uniinfo Desk\Uniinfo Desk\obj\Debug\Apresentação\Login.g.cs
+C:\Users\OZ\Documents\GitHub0111\pim_2018_2\Uniinfo Desk\Uniinfo Desk\obj\Debug\App.g.cs
+C:\Users\OZ\Documents\GitHub0111\pim_2018_2\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinfo Desk_MarkupCompile.cache
+C:\Users\OZ\Documents\GitHub0111\pim_2018_2\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinfo Desk_MarkupCompile.lref
+C:\Users\OZ\Documents\GitHub0111\pim_2018_2\Uniinfo Desk\Uniinfo Desk\obj\Debug\App.baml
+C:\Users\OZ\Documents\GitHub0111\pim_2018_2\Uniinfo Desk\Uniinfo Desk\obj\Debug\Apresentação\Inicio.baml
+C:\Users\OZ\Documents\GitHub0111\pim_2018_2\Uniinfo Desk\Uniinfo Desk\obj\Debug\Apresentação\Login.baml
+C:\Users\OZ\Documents\GitHub0111\pim_2018_2\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinfo Desk.g.resources
+C:\Users\OZ\Documents\GitHub0111\pim_2018_2\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinfo_Desk.Properties.Resources.resources
+C:\Users\OZ\Documents\GitHub0111\pim_2018_2\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinfo Desk.csproj.GenerateResource.cache
+C:\Users\OZ\Documents\GitHub0111\pim_2018_2\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinfo Desk.csproj.CoreCompileInputs.cache
+C:\Users\OZ\Documents\GitHub0111\pim_2018_2\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinfo Desk.csproj.CopyComplete
+C:\Users\OZ\Documents\GitHub0111\pim_2018_2\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinfo Desk.exe
+C:\Users\OZ\Documents\GitHub0111\pim_2018_2\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinfo Desk.pdb
+C:\Users\OZ\Documents\GitHub0111\pim_2018_2\Uniinfo Desk\Uniinfo Desk\bin\Debug\AngleSharp.dll
+C:\Users\OZ\Documents\GitHub0111\pim_2018_2\Uniinfo Desk\Uniinfo Desk\bin\Debug\XamlCSS.dll
+C:\Users\OZ\Documents\GitHub0111\pim_2018_2\Uniinfo Desk\Uniinfo Desk\bin\Debug\XamlCSS.WPF.dll
+C:\Users\OZ\Documents\GitHub0111\pim_2018_2\Uniinfo Desk\Uniinfo Desk\bin\Debug\AngleSharp.xml
+C:\Users\OZ\Documents\GitHub0111\pim_2018_2\Uniinfo Desk\Uniinfo Desk\bin\Debug\XamlCSS.pdb
+C:\Users\OZ\Documents\GitHub0111\pim_2018_2\Uniinfo Desk\Uniinfo Desk\bin\Debug\XamlCSS.WPF.pdb

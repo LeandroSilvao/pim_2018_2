@@ -1,30 +1,21 @@
 ﻿
 using System.Windows;
-using Uniinfo_Desk.ServiceReference;
-
+using Uniinfo_Desk.ServiceReference2;
 
 namespace Uniinfo_Desk.Apresentação
 {
   
     public partial class Inicio : Window
     {
-        
-        
-        
         public Inicio()
         {
             InitializeComponent();
-            
-
         }
-
-       
 
         public void btnLogar_Click_1(object sender, RoutedEventArgs e)
         {
             Grid_Loaded(sender, e);
         }
-
 
         public void Button_Click(object sender, RoutedEventArgs e)
         {

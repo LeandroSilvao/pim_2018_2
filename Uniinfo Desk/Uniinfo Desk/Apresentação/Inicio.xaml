@@ -22,6 +22,12 @@
             </Button.Effect>
         </Button>
         <DataGrid HorizontalAlignment="Left" Height="100" Margin="338,160,0,0" VerticalAlignment="Top" Width="100"/>
+
+
+
+
+
+
         <DataGrid x:Name="grid" HorizontalAlignment="Left" Height="315" Margin="10,26,0,0" VerticalAlignment="Top" Width="1112" SelectionChanged="DataGrid_SelectionChanged" MinColumnWidth="1" CanUserReorderColumns="False" RowHeaderWidth="NaN" SelectionUnit="FullRow" EnableColumnVirtualization="True" EnableRowVirtualization="False" Focusable="False"/>
 
     </Grid>

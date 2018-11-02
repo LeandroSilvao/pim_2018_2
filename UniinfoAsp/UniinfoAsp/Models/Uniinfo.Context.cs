@@ -16,7 +16,7 @@ namespace UniinfoAsp.Models
     public partial class UnipEntities : DbContext
     {
         public UnipEntities()
-            : base("name=UnipEntities")
+            : base("UnipEntities")
         {
         }
     
