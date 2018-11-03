@@ -11,13 +11,19 @@ namespace UniinfoAsp.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Loginn
     {
+        [Display(Name = "Login Id")]
         public int idLogin { get; set; }
+        [Display(Name = "Funcionario Id")]
         public int idFuncionario { get; set; }
+        [Display(Name = "Login")]
         public string login { get; set; }
+        [Display(Name = "Senha")]
         public string senha { get; set; }
+        [Display(Name = "Nivel de Acesso")]
         public int idNivelAcesso { get; set; }
     
         public virtual Funcionario Funcionario { get; set; }

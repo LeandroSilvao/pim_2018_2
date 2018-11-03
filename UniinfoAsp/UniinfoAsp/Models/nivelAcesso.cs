@@ -11,7 +11,8 @@ namespace UniinfoAsp.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class nivelAcesso
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -19,8 +20,9 @@ namespace UniinfoAsp.Models
         {
             this.Loginns = new List<Loginn>();
         }
-    
+        [Display(Name = "Nivel Acesso Id")]
         public int idNivelAcesso { get; set; }
+        [Display(Name = "Tipo de acesso")]
         public string tipoAcesso { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

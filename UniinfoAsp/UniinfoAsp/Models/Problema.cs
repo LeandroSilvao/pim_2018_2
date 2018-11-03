@@ -11,7 +11,8 @@ namespace UniinfoAsp.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Problema
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -19,8 +20,10 @@ namespace UniinfoAsp.Models
         {
             this.Chamadoes = new List<Chamado>();
         }
-    
+
+        [Display(Name = "Problema Id")]
         public int idProblema { get; set; }
+        [Display(Name = "Tipo de problema")]
         public string tipoProblema { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

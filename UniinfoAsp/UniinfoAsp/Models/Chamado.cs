@@ -11,7 +11,8 @@ namespace UniinfoAsp.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Chamado
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -19,12 +20,17 @@ namespace UniinfoAsp.Models
         {
             this.chamadoAtendimentoes = new List<chamadoAtendimento>();
         }
-    
+        [Display(Name = "Chamado Id")]
         public int idChamado { get; set; }
+        [Display(Name = "Funcionario Id")]
         public int idFuncionario { get; set; }
+        [Display(Name = "Problema Id")]
         public int idProblema { get; set; }
+        [Display(Name = "Descrição")]
         public string descricao { get; set; }
+        [Display(Name = "Data de Abertura")]
         public System.DateTime dataChamado { get; set; }
+        [Display(Name = "Status")]
         public string statusAtendimento { get; set; }
     
         public virtual Funcionario Funcionario { get; set; }
