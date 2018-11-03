@@ -28,7 +28,7 @@ namespace UniinfoAsp.Models
         public string nome { get; set; }
         [Display(Name = "Ramal")]
         public Nullable<int> ramal { get; set; }
-        [Display(Name = "Numero do computador")]
+        [Display(Name = "N° do computador")]
         public Nullable<int> nComputador { get; set; }
         [Display(Name = "Email")]
         public string email { get; set; }
