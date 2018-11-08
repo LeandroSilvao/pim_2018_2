@@ -4,40 +4,52 @@
     ViewBag.Title = "Chamados";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
+@Html.ViewBag
+<div style="margin-left:100px; margin-right:100px;">
+    <h2 style="margin:90px 0px 55px 0px;">Chamados em atendimento</h2>
 
-<h2>Chamados em atendimento</h2>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Funcionario.nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Funcionario.email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Chamado.statusAtendimento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Chamado.Problema.tipoProblema)
+            </th>
+            <th></th>
+        </tr>
 
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Funcionario.nome)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Funcionario.email)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Chamado.statusAtendimento)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Funcionario.nome)
-        </td>
-        <td>
-            @Html.DisplayFor(model => item.Funcionario.email)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Chamado.statusAtendimento)
-        </td>
-        <td>
-            @Html.ActionLink("Detalhes", "Details", new { id = item.idAtendimento }) |
-            @Html.ActionLink("Deletar", "Delete", new { id = item.idAtendimento }) |
-            @Html.ActionLink("Encerrar", "Encerrar", new { id = item.idAtendimento }) 
-        </td>
-    </tr>
-}
-
-</table>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Funcionario.nome)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.Funcionario.email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Chamado.statusAtendimento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Chamado.Problema.tipoProblema)
+            </td>
+            <td class="btn btn-primary" style=" margin:0px 5px 5px 10px;">
+                @Html.ActionLink("Detalhes", "Details", new { id = item.idAtendimento }, new { style = "color:white; padding:10px;" })
+            </td>
+            <td class="btn btn-primary">
+                @Html.ActionLink("Deletar", "Delete", new { id = item.idAtendimento }, new { style = "color:white; padding:10px;" })
+            </td>
+            <td class="btn btn-primary" style="margin-left:5px;">
+                @Html.ActionLink("Encerrar", "Encerrar", new { id = item.idAtendimento }, new { style = "color:white; padding:10px;" })
+            </td>
+        </tr>
+        }
+    </table>
+</div>

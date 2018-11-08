@@ -224,6 +224,7 @@
     <Content Include="Content\images\bp5.jpg" />
     <Content Include="Content\images\bp6.jpg" />
     <Content Include="Content\images\café.png" />
+    <Content Include="Content\images\icone.png" />
     <Content Include="Content\images\imguniinfo.jpg" />
     <Content Include="Content\images\imguniinfo2.jpg" />
     <Content Include="Content\images\login.png" />

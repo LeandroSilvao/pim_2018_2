@@ -4,31 +4,34 @@
     ViewBag.Title = "Problema";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
+@Html.ViewBag
+<div style="margin:0px 100px;">
+    <h2 style="margin:90px 0px 10px 0px;">Problema</h2>
+    <p>
+        @Html.ActionLink("Adicionar novo tipo de problema", "Create")
+    </p>
 
-<h2>Problema</h2>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.tipoProblema)
+            </th>
+            <th></th>
+        </tr>
 
-<p>
-    @Html.ActionLink("Adicionar novo tipo de problema", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.tipoProblema)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.tipoProblema)
-        </td>
-        <td>
-            @Html.ActionLink("Editar", "Edit", new { id=item.idProblema }) |
-            @Html.ActionLink("Deletar", "Delete", new { id=item.idProblema })
-
-        </td>
-    </tr>
-}
-
-</table>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.tipoProblema)
+            </td>
+            <td class="btn btn-primary" style=" margin:0px 5px 5px 820px;">
+                @Html.ActionLink("Editar", "Edit", new { id = item.idProblema }, new { style = "color:white; padding:10px;" })
+            </td>
+            <td class="btn btn-primary">
+                @Html.ActionLink("Deletar", "Delete", new { id = item.idProblema }, new { style = "color : white; padding:10px;" })
+            </td>
+        </tr>
+        }
+    </table>
+</div>

@@ -4,14 +4,12 @@
     ViewBag.Title = "Funcionarios";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
-
 @Html.ViewBag
-<div style="margin-left:100px; margin-right:100px;">
+<div style="margin:0px 100px;">
     <h2 style="margin:90px 0px 10px 0px;">Funcionarios</h2>
     <p>
         @Html.ActionLink("Cadastrar novo funcionario", "Create")
     </p>
-
 
     <table class="table">
         <tr>
@@ -25,11 +23,11 @@
                 @Html.DisplayNameFor(model => model.nComputador)
             </th>
             <th>
-                    @Html.DisplayNameFor(model => model.email)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.setor)
-                </th>
+                @Html.DisplayNameFor(model => model.email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.setor)
+            </th>
             <th></th>
         </tr>
 
@@ -51,18 +49,12 @@
             <td>
                 @Html.DisplayFor(modelItem => item.setor)
             </td>
-            <td class="btn btn-primary" style=" margin:0px 5px 5px 5px;">
-            @Html.ActionLink("Editar", "Edit", new { id = item.idFuncionario }, new {style = "color : white; padding:10px;"})
+            <td class="btn btn-primary" style=" margin:0px 5px 5px 10px;">
+            @Html.ActionLink("Editar", "Edit", new { id = item.idFuncionario }, new {style = "color:white; padding:10px;"})
             </td>
             <td class="btn btn-primary">
                 @Html.ActionLink("Deletar", "Delete", new { id = item.idFuncionario }, new { style = "color : white; padding:10px;" })
             </td>
-            @*<td class="novo">
-                @Html.ActionLink("Editar", "Edit", new { id = item.idFuncionario })
-            </td>
-            <td class="novo">
-                @Html.ActionLink("Deletar", "Delete", new { id = item.idFuncionario })
-            </td>*@
         </tr>
         }
 

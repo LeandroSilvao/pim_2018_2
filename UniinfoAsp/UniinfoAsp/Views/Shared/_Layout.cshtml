@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Meu Aplicativo ASP.NET</title>
+    <title>@ViewBag.Title - Uniinfo</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     @Scripts.Render("~/bundles/jquery")
@@ -17,11 +17,11 @@
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <h1>
-                        @Html.ActionLink("Inicío", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                        <a class="navbar-brand"><img src="~/Content/images/icone.png" alt="" class="img-fluid" />@Html.ActionLink("Inicío", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })</a>
                     </h1>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-lg-4 mr-auto">
-                            <li>@Html.ActionLink("Logar", "Login", "Account", null, new { @class = "nav-link" })</li>
+                            <li>@Html.ActionLink("Login", "Login", "Account", null, new { @class = "nav-link" })</li>
                         </ul>
                     </div>
                 </nav>
