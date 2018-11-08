@@ -24,8 +24,8 @@ namespace UniinfoAsp
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/bootstrap2.css",
+                      "~/Content/style2.css"));
         }
     }
 }

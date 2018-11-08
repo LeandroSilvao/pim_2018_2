@@ -9,38 +9,56 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <header class="bg-white py-1">
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <h1>
+                        @Html.ActionLink("Inicio", "Index", "Admin", new { area = "" }, new { @class = "navbar-brand" })
+                    </h1>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-lg-4 mr-auto">
+                            <li>@Html.ActionLink("Funcionarios", "Index", "Funcionario", null, new { @class = "nav-link" })</li>
+                            <li>@Html.ActionLink("Chamados", "Index", "Chamado", null, new { @class = "nav-link" })</li>
+                            <li>@Html.ActionLink("Chamados em andamento", "Index", "ChamadoAtendimento", null, new { @class = "nav-link" })</li>
+                            <li>@Html.ActionLink("Problemas", "Index", "Problema", null, new { @class = "nav-link" })</li>
+                            <li>@Html.ActionLink("Logins", "Index", "Loginn", null, new { @class = "nav-link" })</li>
+                            <li>@Html.ActionLink("LogOut", "LogOut", "Account", null, new { @class = "nav-link" })</li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+        @RenderBody()
+
+    <!-- copyright -->
+    <section style="padding:30px 0px;">
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Inicio", "Index", "Admin", new { area = "" }, new { @class = "navbar-brand" })
+            <div class="row">
+                <div class="col-lg-7 col-md-9">
+                    <p class="" style="margin-top:10px; margin-bottom:-10px;">
+                        &copy; @DateTime.Now.Year - Uniinfo. Todos os direitos reservados.
+                    </p>
+                </div>
+                <div class="col-lg-5 col-md-3">
+                    <ul class="social-iconsv2 agileinfo d-flex">
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li>@Html.ActionLink("Funcionarios", "Index", "Funcionario")</li>
-                <li>@Html.ActionLink("Chamados", "Index", "Chamado")</li>
-                <li>@Html.ActionLink("Chamados em andamento", "Index", "ChamadoAtendimento")</li>
-                <li>@Html.ActionLink("Problemas", "Index", "Problema")</li>
-                <li>@Html.ActionLink("Logins", "Index", "Loginn")</li>
-                <li>@Html.ActionLink("LogOut", "LogOut", "Account")</li>
-            </ul>
-        </div>
-    </div>
-    </div>
+    </section>
+    <!-- copyright -->
+
 </body>
 </html>
 
-<div class="container body-content">
-    @RenderBody()
-    <hr />
-    <footer>
-        <p>&copy; @DateTime.Now.Year - Uniinfo</p>
-    </footer>
-</div>
 
 @Scripts.Render("~/bundles/jquery")
 @Scripts.Render("~/bundles/bootstrap")

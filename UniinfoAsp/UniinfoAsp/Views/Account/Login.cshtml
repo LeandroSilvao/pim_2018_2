@@ -1,46 +1,58 @@
 ﻿@model UniinfoAsp.Models.Loginn
 
 @{
+    /**/
+
     ViewBag.Title = "Login";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Login</h2>
 
-@using (Html.BeginForm()) 
+@using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
-    <div class="form-horizontal">
-        <h4>Insira seu Login e Senha</h4>
-        <hr />
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.login,"Login", htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.login, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.login, "", new { @class = "text-danger" })
+    <section class="inner-banner" style="background-color:#fff;">
+        <div class="container">
+        </div>
+    </section>
+
+    <section class="signin py-5" style="background-color:#fff; margin-top:-10px;">
+        <div class="container">
+            <div class="row main-content-agile">
+                <div class="col-lg-6 col-md-9 mx-auto">
+                    <div class="sub-main-w3 text-center">
+                        <h3>Entrar</h3>
+                        <hr />
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                        <div class="icon1">
+                            @Html.LabelFor(model => model.login, "", htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div>
+                                @Html.EditorFor(model => model.login, new { htmlAttributes = new { @placeholder = "Login", @class = "center" } })
+                                @Html.ValidationMessageFor(model => model.login, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="icon2">
+                            @Html.LabelFor(model => model.senha, "", htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div>
+                                @Html.EditorFor(model => model.senha, new { htmlAttributes = new { @placeholder = "Senha", @class = "center" } })
+                                @Html.ValidationMessageFor(model => model.senha, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <input type="submit" value="Login" class="btn btn-default" />
+                        <div style=" padding-top:10px; ">
+                            @ViewBag.Message
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <img src="~/Content/images/banner.png" alt="" class="img-fluid" />
+                </div>
             </div>
         </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.senha,"Senha", htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.senha, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.senha, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Login" class="btn btn-default" />
-            </div>
-        </div>
-    </div>
+    </section>
 }
 
-<div>
-    @ViewBag.Message
-</div>
+
