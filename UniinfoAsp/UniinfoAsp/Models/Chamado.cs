@@ -28,6 +28,8 @@ namespace UniinfoAsp.Models
         public int idProblema { get; set; }
         [Display(Name = "Descrição")]
         public string descricao { get; set; }
+
+        [DataType(DataType.Date)]
         [Display(Name = "Data de Abertura")]
         public System.DateTime dataChamado { get; set; }
         [Display(Name = "Status")]

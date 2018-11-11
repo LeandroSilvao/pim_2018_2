@@ -5,29 +5,28 @@
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<h2>Editar Acesso</h2>
-
+@Html.ViewBag
 
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
-    <div class="form-horizontal">
+
+    <div style="margin:90px 250px 20px 320px;">
         <h4>Login</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         @Html.HiddenFor(model => model.idLogin)
 
         <div class="form-group">
-            @Html.LabelFor(model => model.idFuncionario, "Nome do Funcionário", htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.Funcionario.idFuncionario, "Nome", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("idFuncionario", null, htmlAttributes: new { @class = "form-control" })
-                @Html.ValidationMessageFor(model => model.idFuncionario, "", new { @class = "text-danger" })
+                @Html.ValidationMessageFor(model => model.Funcionario.idFuncionario, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.login,"Login", htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.login, "Login", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.login, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.login, "", new { @class = "text-danger" })
@@ -35,7 +34,7 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.senha,"Senha", htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.senha, "Senha", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.senha, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.senha, "", new { @class = "text-danger" })
@@ -52,15 +51,14 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Save" class="btn btn-default" />
+                <input type="submit" value="Salvar" class="btn btn-default" />
             </div>
+        </div>
+        <div class="btn btn-primary" style="margin-left:15px;">
+            @Html.ActionLink("Voltar", "Index", null, new { style = "color:white;" })
         </div>
     </div>
 }
-
-<div>
-    @Html.ActionLink("Voltar", "Index")
-</div>
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")

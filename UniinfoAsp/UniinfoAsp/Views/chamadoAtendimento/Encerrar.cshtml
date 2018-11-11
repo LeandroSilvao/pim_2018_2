@@ -5,12 +5,12 @@
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<h2>Encerrar</h2>
+@Html.ViewBag
 
-<div>
-    <h4>chamadoAtendimento</h4>
+<div style="margin:90px 250px 20px 320px;">
+    <h4>Deletar</h4>
     <hr />
-    <dl class="dl-horizontal">
+    <dl>
         <dt>
             @Html.DisplayNameFor(model => model.Chamado.dataChamado)
         </dt>
@@ -37,12 +37,15 @@
 
     </dl>
 
-    @using (Html.BeginForm()) {
+    @using (Html.BeginForm())
+    {
         @Html.AntiForgeryToken()
 
         <div class="form-actions no-color">
-            <input type="submit" value="Encerrar" class="btn btn-default" /> |
-            @Html.ActionLink("Voltar", "Index")
+            <input type="submit" value="Encerrar" class="btn btn-default" />
         </div>
     }
+    <div class="btn btn-primary" style="margin-top:5px;">
+        @Html.ActionLink("Voltar", "Index", null, new { style = "color:white;" })
+    </div>
 </div>

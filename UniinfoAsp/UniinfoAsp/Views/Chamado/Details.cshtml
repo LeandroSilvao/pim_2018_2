@@ -5,13 +5,13 @@
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<h2>Detalhes</h2>
+@Html.ViewBag
 
-<div>
-    <h4>Chamado</h4>
+<div style="margin:90px 250px 20px 320px;">
+    <h4>Deletar</h4>
     <hr />
-    <dl class="dl-horizontal">
-
+    
+    <dl>
         <dt>
             @Html.DisplayNameFor(model => model.Funcionario.nome)
         </dt>
@@ -24,10 +24,10 @@
             @Html.DisplayNameFor(model => model.descricao)
         </dt>
 
-        <dd>
+        <dd >
             @Html.DisplayFor(model => model.descricao)
         </dd>
-
+        
         <dt>
             @Html.DisplayNameFor(model => model.dataChamado)
         </dt>
@@ -51,9 +51,11 @@
         <dd>
             @Html.DisplayFor(model => model.Problema.tipoProblema)
         </dd>
-
     </dl>
+    <div class="form-actions no-color">
+        <input type="submit" value="Deletar" class="btn btn-default" />
+    </div>
+    <div class="btn btn-primary" style="margin-top:5px;">
+        @Html.ActionLink("Voltar", "Index", null, new { style = "color:white;" })
+    </div>
 </div>
-<p>
-    @Html.ActionLink("Voltar", "Index")
-</p>

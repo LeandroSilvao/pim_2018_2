@@ -20,6 +20,7 @@ namespace UniinfoAsp.Models
         [Required(ErrorMessage = "Campo vazio", AllowEmptyStrings = false)]
         public Nullable<int> ramal { get; set; }
 
+        //[MaxLength(30)]
         [Required(ErrorMessage = "Campo vazio", AllowEmptyStrings = false)]
         [Remote("computadorCadastrado", "Funcionario", ErrorMessage = "Esse computador ja está cadastrado")]
         public Nullable<int> nComputador { get; set; }
