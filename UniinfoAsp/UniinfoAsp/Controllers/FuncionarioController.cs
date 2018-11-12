@@ -100,9 +100,17 @@ namespace UniinfoAsp.Controllers
         public ActionResult DeleteConfirmed(int id)
         {
             Funcionario funcionario = db.Funcionarios.Find(id);
-            db.Funcionarios.Remove(funcionario);
-            db.SaveChanges();
-            return RedirectToAction("Index");
+            if (db.Chamadoes.Any(f => f.idFuncionario == funcionario.idFuncionario))
+            {
+                ViewBag.Message = "Se o usuário estiver relacionado a um chamado (Aberto, Em andamento, Encerrado) ele não poderá ser apagado";
+            }
+            else
+            {
+                db.Funcionarios.Remove(funcionario);
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(funcionario);
         }
 
         protected override void Dispose(bool disposing)
