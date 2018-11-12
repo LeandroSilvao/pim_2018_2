@@ -4,31 +4,25 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Uniinfo_Desk.Apresentação"
-        xmlns:Properties="clr-namespace:Uniinfo_Desk.Properties" x:Name="mnConsulta" x:Class="Uniinfo_Desk.Apresentação.Inicio"
+        xmlns:Properties="clr-namespace:Uniinfo_Desk.Properties" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Name="mnConsulta" x:Class="Uniinfo_Desk.Apresentação.Inicio"
         mc:Ignorable="d"
-        Title="Chamados" Height="469.5" Width="1140.5" ResizeMode="NoResize" Background="#00000000" BorderBrush="#00000000" Foreground="#00000000" Icon="Home.png">
+        Title="Chamados" Height="469.5" Width="551.5" ResizeMode="NoResize" Background="#00000000" BorderBrush="#00000000" Foreground="#00000000" Icon="Home.png">
     <Grid Background="White">
-        <Button x:Name="btnLoggout" Content="Button" HorizontalAlignment="Left" Margin="1080,389,0,0" VerticalAlignment="Top" Width="26" Height="22" Foreground="Red" Click="Button_Click">
-            <Button.BorderBrush>
-                <SolidColorBrush Color="Red" Opacity="0.575"/>
-            </Button.BorderBrush>
-            <Button.Background>
-                <ImageBrush ImageSource="Imagens/download.png" TileMode="Tile" Opacity="400"/>
-            </Button.Background>
-        </Button>
-        <Button x:Name="btnExibirChamado" Content="Atualizar Lista" HorizontalAlignment="Left" Margin="500,365,0,0" VerticalAlignment="Top" Width="146" IsDefault="True" Height="26" Background="#FF1232FF" BorderBrush="#00000000" Click="btnLogar_Click_1" FontWeight="Medium" FontStretch="Condensed" TextOptions.TextHintingMode="Animated" FontFamily="Yu Gothic UI">
+        <DataGrid  HorizontalAlignment="Left" Height="100" Margin="338,160,0,0" VerticalAlignment="Top" Width="100"/>
+        <DataGridColumnHeader BorderBrush="Black"></DataGridColumnHeader>
+        
+        <DataGrid x:Name="grid" HorizontalAlignment="Left" Height="397" Margin="0,44,0,0" VerticalAlignment="Top" Width="530" MinColumnWidth="1" RowHeaderWidth="NaN" AutoGeneratingColumn="grid_AutoGeneratingColumn" Focusable="False" Background="{x:Null}" IsSynchronizedWithCurrentItem="False" GridLinesVisibility="Horizontal" HorizontalGridLinesBrush="#FF006DBE" RowDetailsVisibilityMode="Visible" SelectionMode="Single" VerticalGridLinesBrush="#FF82A9C5" FrozenColumnCount="1" CanUserReorderColumns="False" HeadersVisibility="Column" EnableColumnVirtualization="True" IsReadOnly="True" IsTextSearchCaseSensitive="True"/>
+        <Label Content="Consulta de Chamados" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FF006DBE" Width="546" FontFamily="Century" Foreground="#DDFFFFFF" Height="44" FontSize="22"/>
+        <Button x:Name="btnExibirChamado" Content="Atualizar Lista" HorizontalAlignment="Left" Margin="296,6,0,0" VerticalAlignment="Top" Width="146" IsDefault="True" Height="32" Background="#FF006DBE" BorderBrush="#FFF9F4F4" Click="btnLogar_Click_1" FontWeight="Medium" FontStretch="Condensed" TextOptions.TextHintingMode="Animated" FontFamily="Yu Gothic UI">
             <Button.Effect>
                 <DropShadowEffect RenderingBias="Quality" ShadowDepth="1" Color="#FF1232FF"/>
             </Button.Effect>
         </Button>
-        <DataGrid HorizontalAlignment="Left" Height="100" Margin="338,160,0,0" VerticalAlignment="Top" Width="100"/>
-
-
-
-
-
-
-        <DataGrid x:Name="grid" HorizontalAlignment="Left" Height="315" Margin="10,26,0,0" VerticalAlignment="Top" Width="1112" SelectionChanged="DataGrid_SelectionChanged" MinColumnWidth="1" CanUserReorderColumns="False" RowHeaderWidth="NaN" SelectionUnit="FullRow" EnableColumnVirtualization="True" EnableRowVirtualization="False" Focusable="False"/>
+        <Button x:Name="btnLoggout" Content="" HorizontalAlignment="Left" Margin="506,10,0,0" VerticalAlignment="Top" Width="24" Click="btnLoggout_Click" BorderBrush="{x:Null}" Height="25">
+            <Button.Background>
+                <ImageBrush ImageSource="Imagens/Loggout.png" Stretch="UniformToFill"/>
+            </Button.Background>
+        </Button>
 
     </Grid>
 </Window>

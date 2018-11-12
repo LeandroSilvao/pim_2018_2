@@ -1,27 +1,3 @@
-E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\bin\Debug\Uniinfo Desk.exe.config
-E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\bin\Debug\Uniinfo Desk.exe
-E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\bin\Debug\Uniinfo Desk.pdb
-E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\obj\Debug\Apresentação\Login.g.cs
-E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\obj\Debug\App.g.cs
-E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinfo Desk_MarkupCompile.cache
-E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinfo Desk_MarkupCompile.lref
-E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\obj\Debug\Apresentação\Login.baml
-E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinfo Desk.g.resources
-E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinfo_Desk.Properties.Resources.resources
-E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinfo Desk.csproj.GenerateResource.cache
-E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinfo Desk.csproj.CoreCompileInputs.cache
-E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinfo Desk.exe
-E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinfo Desk.pdb
-E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\obj\Debug\Apresentação\Inicio.g.cs
-E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\obj\Debug\Apresentação\Inicio.baml
-E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\bin\Debug\MaterialDesignColors.dll
-E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\bin\Debug\MaterialDesignThemes.Wpf.dll
-E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\bin\Debug\MaterialDesignColors.pdb
-E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\bin\Debug\MaterialDesignThemes.Wpf.pdb
-E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\bin\Debug\MaterialDesignThemes.Wpf.xml
-E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\obj\Debug\App.baml
-E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinfo Desk.csproj.CopyComplete
-E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinfo Desk.csprojAssemblyReference.cache
 C:\Users\OZ\Desktop\gitpim\pim_2018_2\Uniinfo Desk\Uniinfo Desk\bin\Debug\Uniinfo Desk.exe.config
 C:\Users\OZ\Desktop\gitpim\pim_2018_2\Uniinfo Desk\Uniinfo Desk\bin\Debug\Uniinfo Desk.exe
 C:\Users\OZ\Desktop\gitpim\pim_2018_2\Uniinfo Desk\Uniinfo Desk\bin\Debug\Uniinfo Desk.pdb
@@ -76,3 +52,63 @@ C:\Users\OZ\Documents\GitHub0111\pim_2018_2\Uniinfo Desk\Uniinfo Desk\bin\Debug\
 C:\Users\OZ\Documents\GitHub0111\pim_2018_2\Uniinfo Desk\Uniinfo Desk\bin\Debug\AngleSharp.xml
 C:\Users\OZ\Documents\GitHub0111\pim_2018_2\Uniinfo Desk\Uniinfo Desk\bin\Debug\XamlCSS.pdb
 C:\Users\OZ\Documents\GitHub0111\pim_2018_2\Uniinfo Desk\Uniinfo Desk\bin\Debug\XamlCSS.WPF.pdb
+E:\Users\SOLVE4ME-DEV02\Desktop\Uniinfo Desk\Uniinfo Desk\bin\Debug\Uniinfo Desk.exe.config
+E:\Users\SOLVE4ME-DEV02\Desktop\Uniinfo Desk\Uniinfo Desk\bin\Debug\Uniinfo Desk.exe
+E:\Users\SOLVE4ME-DEV02\Desktop\Uniinfo Desk\Uniinfo Desk\bin\Debug\Uniinfo Desk.pdb
+E:\Users\SOLVE4ME-DEV02\Desktop\Uniinfo Desk\Uniinfo Desk\bin\Debug\AngleSharp.dll
+E:\Users\SOLVE4ME-DEV02\Desktop\Uniinfo Desk\Uniinfo Desk\bin\Debug\MaterialDesignColors.dll
+E:\Users\SOLVE4ME-DEV02\Desktop\Uniinfo Desk\Uniinfo Desk\bin\Debug\MaterialDesignThemes.Wpf.dll
+E:\Users\SOLVE4ME-DEV02\Desktop\Uniinfo Desk\Uniinfo Desk\bin\Debug\XamlCSS.dll
+E:\Users\SOLVE4ME-DEV02\Desktop\Uniinfo Desk\Uniinfo Desk\bin\Debug\XamlCSS.WPF.dll
+E:\Users\SOLVE4ME-DEV02\Desktop\Uniinfo Desk\Uniinfo Desk\bin\Debug\AngleSharp.xml
+E:\Users\SOLVE4ME-DEV02\Desktop\Uniinfo Desk\Uniinfo Desk\bin\Debug\MaterialDesignColors.pdb
+E:\Users\SOLVE4ME-DEV02\Desktop\Uniinfo Desk\Uniinfo Desk\bin\Debug\MaterialDesignThemes.Wpf.pdb
+E:\Users\SOLVE4ME-DEV02\Desktop\Uniinfo Desk\Uniinfo Desk\bin\Debug\MaterialDesignThemes.Wpf.xml
+E:\Users\SOLVE4ME-DEV02\Desktop\Uniinfo Desk\Uniinfo Desk\bin\Debug\XamlCSS.pdb
+E:\Users\SOLVE4ME-DEV02\Desktop\Uniinfo Desk\Uniinfo Desk\bin\Debug\XamlCSS.WPF.pdb
+E:\Users\SOLVE4ME-DEV02\Desktop\Uniinfo Desk\Uniinfo Desk\obj\Debug\Apresentação\Inicio.g.cs
+E:\Users\SOLVE4ME-DEV02\Desktop\Uniinfo Desk\Uniinfo Desk\obj\Debug\Apresentação\Login.g.cs
+E:\Users\SOLVE4ME-DEV02\Desktop\Uniinfo Desk\Uniinfo Desk\obj\Debug\App.g.cs
+E:\Users\SOLVE4ME-DEV02\Desktop\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinfo Desk_MarkupCompile.cache
+E:\Users\SOLVE4ME-DEV02\Desktop\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinfo Desk_MarkupCompile.lref
+E:\Users\SOLVE4ME-DEV02\Desktop\Uniinfo Desk\Uniinfo Desk\obj\Debug\App.baml
+E:\Users\SOLVE4ME-DEV02\Desktop\Uniinfo Desk\Uniinfo Desk\obj\Debug\Apresentação\Inicio.baml
+E:\Users\SOLVE4ME-DEV02\Desktop\Uniinfo Desk\Uniinfo Desk\obj\Debug\Apresentação\Login.baml
+E:\Users\SOLVE4ME-DEV02\Desktop\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinfo Desk.g.resources
+E:\Users\SOLVE4ME-DEV02\Desktop\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinfo_Desk.Properties.Resources.resources
+E:\Users\SOLVE4ME-DEV02\Desktop\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinfo Desk.csproj.GenerateResource.cache
+E:\Users\SOLVE4ME-DEV02\Desktop\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinfo Desk.csproj.CoreCompileInputs.cache
+E:\Users\SOLVE4ME-DEV02\Desktop\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinfo Desk.csproj.CopyComplete
+E:\Users\SOLVE4ME-DEV02\Desktop\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinfo Desk.exe
+E:\Users\SOLVE4ME-DEV02\Desktop\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinfo Desk.pdb
+E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\bin\Debug\Uniinfo Desk.exe.config
+E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\bin\Debug\Uniinfo Desk.exe
+E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\bin\Debug\Uniinfo Desk.pdb
+E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\bin\Debug\AngleSharp.dll
+E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\bin\Debug\MaterialDesignColors.dll
+E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\bin\Debug\MaterialDesignThemes.Wpf.dll
+E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\bin\Debug\XamlCSS.dll
+E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\bin\Debug\XamlCSS.WPF.dll
+E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\bin\Debug\AngleSharp.xml
+E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\bin\Debug\MaterialDesignColors.pdb
+E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\bin\Debug\MaterialDesignThemes.Wpf.pdb
+E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\bin\Debug\MaterialDesignThemes.Wpf.xml
+E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\bin\Debug\XamlCSS.pdb
+E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\bin\Debug\XamlCSS.WPF.pdb
+E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\obj\Debug\Apresentação\Inicio.g.cs
+E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\obj\Debug\Apresentação\Login.g.cs
+E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\obj\Debug\App.g.cs
+E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinfo Desk_MarkupCompile.cache
+E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinfo Desk_MarkupCompile.lref
+E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\obj\Debug\App.baml
+E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\obj\Debug\Apresentação\Inicio.baml
+E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\obj\Debug\Apresentação\Login.baml
+E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinfo Desk.g.resources
+E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinfo_Desk.Properties.Resources.resources
+E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinfo Desk.csproj.GenerateResource.cache
+E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinfo Desk.csproj.CoreCompileInputs.cache
+E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinfo Desk.csproj.CopyComplete
+E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinfo Desk.exe
+E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinfo Desk.pdb
+E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\bin\Debug\MaterialSkin.dll
+E:\Users\SOLVE4ME-DEV02\Desktop\UniinfoDesk\Uniinfo Desk\Uniinfo Desk\obj\Debug\Uniinfo Desk.csprojAssemblyReference.cache

@@ -1,6 +1,7 @@
 ﻿
 using System.Windows;
-using Uniinfo_Desk.ServiceReference2;
+using System.Windows.Controls;
+using Uniinfo_Desk.ServiceReference;
 
 namespace Uniinfo_Desk.Apresentação
 {
@@ -19,9 +20,7 @@ namespace Uniinfo_Desk.Apresentação
 
         public void Button_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow Login = new MainWindow();
-            mnConsulta.Close();
-            Login.mnaLogin.ShowDialog();
+           
 
         }
 
@@ -32,6 +31,7 @@ namespace Uniinfo_Desk.Apresentação
 
         public void Grid_Loaded(object sender, RoutedEventArgs e)
         {
+            
             try
             {
                 WebServiceSoapClient obj = new WebServiceSoapClient();
@@ -41,10 +41,48 @@ namespace Uniinfo_Desk.Apresentação
             {
                 MessageBox.Show("Falha na Conexão com o Web Service");
             }
+
             
 
         }
 
+        private void grid_AutoGeneratingColumn(object sender, System.Windows.Controls.DataGridAutoGeneratingColumnEventArgs e)
+        {
 
+            
+            
+
+            if (e.PropertyName == "ExtensionData")
+            {
+                e.Column = null;
+            }
+            if (e.PropertyName == "dataChamado")
+            {
+                (e.Column as DataGridTextColumn).Binding.StringFormat = "dd/MM/yyyy";
+                e.Column.Header = "Data de Abertura";
+                
+            }
+
+           
+            if (e.PropertyName.StartsWith("descricao"))
+            {
+                e.Column.Header = "Descrição";
+            }
+            if (e.PropertyName.StartsWith("statusAtendimento"))
+            {
+                e.Column.Header = "Status do Atendimento";
+            }
+            if (e.PropertyName.StartsWith("nome"))
+            {
+                e.Column.Header = "Nome";
+            }
+        }
+
+        private void btnLoggout_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow Login = new MainWindow();
+            mnConsulta.Close();
+            Login.mnaLogin.ShowDialog();
+        }
     }
 }

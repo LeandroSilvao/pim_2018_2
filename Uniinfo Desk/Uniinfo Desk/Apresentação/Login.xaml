@@ -5,20 +5,35 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Uniinfo_Desk"
         mc:Ignorable="d"
-        Title="Login" Height="177.814" Width="261.311" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Background="#FFCDC7C7" BorderBrush="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}">
-    <Grid Background="#FFE1E4F9" OpacityMask="Black">
-        <Label x:Name="lblUsuário" Content="Usuário:" HorizontalAlignment="Left" Margin="15,29,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txbUsuário" HorizontalAlignment="Left" Height="30" Margin="68,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="161" CaretBrush="#FF1232FF" Background="{x:Null}">
+        
+        Title="Login" Height="171.491" Width="261.311" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Background="White" BorderBrush="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}" Foreground="{x:Null}">
+    <Grid>
+
+        <Label x:Name="lblUsuário" Content="Usuário:" HorizontalAlignment="Left" Margin="15,17,0,0" VerticalAlignment="Top">
+            <Label.Effect>
+                <DropShadowEffect Opacity="1" RenderingBias="Quality"/>
+            </Label.Effect>
+        </Label>
+        <TextBox  x:Name="txbUsuário" HorizontalAlignment="Left" Height="30" Margin="68,9,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="156" CaretBrush="{x:Null}" Background="{x:Null}" Foreground="Black" SelectionBrush="DodgerBlue" BorderBrush="#89000000">
             <TextBox.Effect>
-                <DropShadowEffect Opacity="0.5" ShadowDepth="4" RenderingBias="Quality"/>
+                <DropShadowEffect Opacity="0.9" RenderingBias="Quality"/>
             </TextBox.Effect>
         </TextBox>
-        <Label x:Name="lblSenha" Content="Senha:" HorizontalAlignment="Left" Margin="23,69,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.489,0.833"/>
-        <Button x:Name="btnLogar" Content="Logar" HorizontalAlignment="Left" Margin="87,104,0,0" VerticalAlignment="Center" Width="70" IsDefault="True" Height="27" Background="#FF1232FF" BorderBrush="Transparent" Click="btnLogar_Click_1" FontWeight="Thin" FontStretch="Condensed" TextOptions.TextHintingMode="Animated" FontFamily="Warsaw">
+        <Label x:Name="lblSenha" Content="Senha:" HorizontalAlignment="Left" Margin="23,57,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.489,0.833">
+            <Label.Effect>
+                <DropShadowEffect Opacity="1" RenderingBias="Quality"/>
+            </Label.Effect>
+        </Label>
+        <Button x:Name="btnLogar" Content="Logar" HorizontalAlignment="Left" Margin="89,108,0,4" VerticalAlignment="Center" Width="70" IsDefault="True" Height="30" Background="#FF006DBE" BorderBrush="Transparent" Click="btnLogar_Click_1" FontWeight="Thin" FontStretch="Condensed" TextOptions.TextHintingMode="Animated" FontFamily="Warsaw" TabIndex="123">
             <Button.Effect>
                 <DropShadowEffect RenderingBias="Quality" ShadowDepth="1" Color="#FF1232FF"/>
             </Button.Effect>
         </Button>
-        <PasswordBox x:Name="psdSenha" HorizontalAlignment="Left" Margin="68,63,0,0" VerticalAlignment="Top" Width="156"/>
+        <PasswordBox x:Name="psdSenha" HorizontalAlignment="Left" Margin="68,51,0,0" VerticalAlignment="Top" Width="156" Foreground="Black" CaretBrush="{x:Null}" SelectionBrush="DodgerBlue" Background="{x:Null}">
+            <PasswordBox.Effect>
+                <DropShadowEffect Opacity="0.9" RenderingBias="Quality"/>
+            </PasswordBox.Effect>
+        </PasswordBox>
+        <TextBox x:Name="txbErros" HorizontalAlignment="Left" Height="23" Margin="23,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206" Foreground="Red" BorderBrush="{x:Null}" Background="{x:Null}" SelectionBrush="{x:Null}" CaretBrush="{x:Null}" TextAlignment="Center" FontSize="10"/>
     </Grid>
 </Window>
