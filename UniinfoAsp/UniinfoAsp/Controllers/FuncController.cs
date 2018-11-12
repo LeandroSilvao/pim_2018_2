@@ -38,7 +38,6 @@ namespace UniinfoAsp.Controllers
                 Db.Chamadoes.Add(Cham);
                 Db.SaveChanges();
                 return RedirectToAction("CadastrarChamado");
-            
 
         }
     }

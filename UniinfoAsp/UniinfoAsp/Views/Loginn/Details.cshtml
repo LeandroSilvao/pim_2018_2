@@ -8,7 +8,7 @@
 @Html.ViewBag
 
 <div style="margin:90px 250px 20px 320px;">
-    <h4>Deletar</h4>
+    <h4>Detalhes</h4>
     <hr />
     <dl>
         <dt>
@@ -35,9 +35,14 @@
             @Html.DisplayFor(model => model.Funcionario.nComputador)
         </dd>
     </dl>
-    <div class="form-actions no-color">
-        <input type="submit" value="Deletar" class="btn btn-default" />
-    </div>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Deletar" class="btn btn-default" />
+        </div>
+    }
     <div class="btn btn-primary" style="margin-top:5px;">
         @Html.ActionLink("Voltar", "Index", null, new { style = "color:white;" })
     </div>

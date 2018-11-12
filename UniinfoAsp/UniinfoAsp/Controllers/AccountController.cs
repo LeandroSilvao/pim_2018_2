@@ -23,6 +23,7 @@ namespace UniinfoAsp.Controllers
             {
                 Session["idLogin"] = result[0].idLogin;
                 FormsAuthentication.SetAuthCookie(result[0].login, false);
+
                 //If admin
                 if (result[0].idNivelAcesso == 1)
                 {
@@ -43,7 +44,8 @@ namespace UniinfoAsp.Controllers
 
         public ActionResult LogOut()
         {
-            Session["idLogin"] = 0;
+            //Session["idLogin"] = 0;
+            //Session.Abandon();
             FormsAuthentication.SignOut();
             return RedirectToAction("Login");
         }

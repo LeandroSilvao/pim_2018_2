@@ -37,7 +37,16 @@ namespace UniinfoAsp.Controllers
             return View(chamado);
         }
 
-  
+        [HttpPost, ActionName("Details")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DetailsDeleteConfirmed(int id)
+        {
+            Chamado chamado = db.Chamadoes.Find(id);
+            db.Chamadoes.Remove(chamado);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
 
         // GET: Chamado/Delete/5
         public ActionResult Delete(int? id)

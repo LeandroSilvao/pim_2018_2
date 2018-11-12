@@ -36,6 +36,16 @@ namespace UniinfoAsp.Controllers
             return View(loginn);
         }
 
+        [HttpPost, ActionName("Details")]
+        [ValidateAntiForgeryToken]
+        public ActionResult detailsDeleteConfirmed(int id)
+        {
+            Loginn loginn = db.Loginns.Find(id);
+            db.Loginns.Remove(loginn);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
         // GET: Loginn/Create
         public ActionResult Create()
         {

@@ -154,11 +154,13 @@
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\chamadoAtendimentoController.cs" />
     <Compile Include="Controllers\ChamadoController.cs" />
+    <Compile Include="Controllers\ContatoController.cs" />
     <Compile Include="Controllers\FuncController.cs" />
     <Compile Include="Controllers\FuncionarioController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginnController.cs" />
     <Compile Include="Controllers\ProblemaController.cs" />
+    <Compile Include="Controllers\SobreController.cs" />
     <Compile Include="DAL\chamadoDAO.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -224,6 +226,8 @@
     <Content Include="Content\images\bp5.jpg" />
     <Content Include="Content\images\bp6.jpg" />
     <Content Include="Content\images\café.png" />
+    <Content Include="Content\images\helpdesk_logo_bg_blue_m2.png" />
+    <Content Include="Content\images\helpdesk_logo_nbg_default_menor.png" />
     <Content Include="Content\images\icone.png" />
     <Content Include="Content\images\imguniinfo.jpg" />
     <Content Include="Content\images\imguniinfo2.jpg" />
@@ -318,6 +322,8 @@
     <Content Include="Views\chamadoAtendimento\Encerrar.cshtml" />
     <Content Include="Views\Func\Index.cshtml" />
     <Content Include="Views\Func\CadastrarChamado.cshtml" />
+    <Content Include="Views\Contato\Index.cshtml" />
+    <Content Include="Views\Sobre\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
