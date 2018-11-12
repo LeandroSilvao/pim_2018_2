@@ -10,6 +10,7 @@ using UniinfoAsp.Models;
 
 namespace UniinfoAsp.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class FuncionarioController : Controller
     {
         private UnipEntities db = new UnipEntities();

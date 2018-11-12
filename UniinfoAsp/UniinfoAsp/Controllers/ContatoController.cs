@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace UniinfoAsp.Controllers
 {
+    [Authorize(Roles = "Funcionario")]
     public class ContatoController : Controller
     {
         // GET: Contato

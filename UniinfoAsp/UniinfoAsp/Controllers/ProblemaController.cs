@@ -6,6 +6,7 @@ using UniinfoAsp.Models;
 
 namespace UniinfoAsp.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class ProblemaController : Controller
     {
         private UnipEntities db = new UnipEntities();

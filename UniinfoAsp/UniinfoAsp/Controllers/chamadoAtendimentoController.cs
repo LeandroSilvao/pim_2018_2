@@ -8,6 +8,7 @@ using UniinfoAsp.Models;
 
 namespace UniinfoAsp.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class chamadoAtendimentoController : Controller
     {
         private UnipEntities db = new UnipEntities();
