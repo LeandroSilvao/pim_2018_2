@@ -6,56 +6,65 @@
 }
 
 @Html.ViewBag
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
 
-<div style="margin:90px 250px 20px 320px;">
-    <h4>Deletar</h4>
-    <hr />
-    
-    <dl>
-        <dt>
-            @Html.DisplayNameFor(model => model.Funcionario.nome)
-        </dt>
+    <body>
+        <div style="margin:90px 250px 20px 320px;">
+            <h4>Deletar</h4>
+            <hr />
 
-        <dd>
-            @Html.DisplayFor(model => model.Funcionario.nome)
-        </dd>
+            <dl>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Funcionario.nome)
+                </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.descricao)
-        </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Funcionario.nome)
+                </dd>
 
-        <dd >
-            @Html.DisplayFor(model => model.descricao)
-        </dd>
-        
-        <dt>
-            @Html.DisplayNameFor(model => model.dataChamado)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.descricao)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.dataChamado)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.descricao)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.statusAtendimento)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.dataChamado)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.statusAtendimento)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.dataChamado)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Problema.tipoProblema)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.statusAtendimento)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Problema.tipoProblema)
-        </dd>
-    </dl>
-    <div class="form-actions no-color">
-        <input type="submit" value="Deletar" class="btn btn-default" />
-    </div>
-    <div class="btn btn-primary" style="margin-top:5px;">
-        @Html.ActionLink("Voltar", "Index", null, new { style = "color:white;" })
-    </div>
-</div>
+                <dd>
+                    @Html.DisplayFor(model => model.statusAtendimento)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Problema.tipoProblema)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Problema.tipoProblema)
+                </dd>
+            </dl>
+            <div class="form-actions no-color">
+                <input type="submit" value="Deletar" class="btn btn-default" />
+            </div>
+            <div class="btn btn-primary" style="margin-top:5px;">
+                @Html.ActionLink("Voltar", "Index", null, new { style = "color:white;" })
+            </div>
+        </div>
+    </body>
+}
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
