@@ -14,7 +14,7 @@
                 <DropShadowEffect Opacity="1" RenderingBias="Quality"/>
             </Label.Effect>
         </Label>
-        <TextBox  x:Name="txbUsuário" HorizontalAlignment="Left" Height="30" Margin="68,9,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="156" CaretBrush="{x:Null}" Background="{x:Null}" Foreground="Black" SelectionBrush="DodgerBlue" BorderBrush="#89000000">
+        <TextBox  x:Name="txbUsuário" HorizontalAlignment="Left" Height="30" Margin="68,9,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="156" CaretBrush="{x:Null}" Background="{x:Null}" Foreground="Black" SelectionBrush="DodgerBlue" BorderBrush="#89000000" MaxLength="50" MaxLines="1">
             <TextBox.Effect>
                 <DropShadowEffect Opacity="0.9" RenderingBias="Quality"/>
             </TextBox.Effect>
@@ -29,7 +29,7 @@
                 <DropShadowEffect RenderingBias="Quality" ShadowDepth="1" Color="#FF1232FF"/>
             </Button.Effect>
         </Button>
-        <PasswordBox x:Name="psdSenha" HorizontalAlignment="Left" Margin="68,51,0,0" VerticalAlignment="Top" Width="156" Foreground="Black" CaretBrush="{x:Null}" SelectionBrush="DodgerBlue" Background="{x:Null}">
+        <PasswordBox x:Name="psdSenha" HorizontalAlignment="Left" Margin="68,51,0,0" VerticalAlignment="Top" Width="156" Foreground="Black" CaretBrush="{x:Null}" SelectionBrush="DodgerBlue" Background="{x:Null}" MaxLength="50">
             <PasswordBox.Effect>
                 <DropShadowEffect Opacity="0.9" RenderingBias="Quality"/>
             </PasswordBox.Effect>
