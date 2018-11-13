@@ -41,12 +41,18 @@ namespace UniinfoAsp.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult detailsDeleteConfirmed(int id)
         {
-
-
             Loginn loginn = db.Loginns.Find(id);
-            db.Loginns.Remove(loginn);
-            db.SaveChanges();
-            return RedirectToAction("Index");
+            if (loginn.login.Equals("jw"))
+            {
+                ViewBag.Message = "Este login não pode ser apagado";
+            }
+            else
+            {
+                db.Loginns.Remove(loginn);
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(loginn);
         }
         
         // GET: Loginn/Create
