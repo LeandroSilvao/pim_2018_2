@@ -22,7 +22,7 @@ namespace UniinfoAsp.Models
 
         //[MaxLength(30)]
         [Required(ErrorMessage = "Campo vazio", AllowEmptyStrings = false)]
-        [Remote("computadorCadastrado", "Funcionario", ErrorMessage = "Esse computador ja está cadastrado")]
+        //[Remote("computadorCadastrado", "Funcionario", ErrorMessage = "Esse computador ja está cadastrado")]
         public Nullable<int> nComputador { get; set; }
 
         [Required(ErrorMessage = "Campo vazio", AllowEmptyStrings = false)]
@@ -45,7 +45,7 @@ namespace UniinfoAsp.Models
         public int idNivelAcesso { get; set; }
 
         [Required(ErrorMessage = "Campo vazio", AllowEmptyStrings = false)]
-        [System.Web.Mvc.Remote("loginExistente", "Loginn", ErrorMessage = "Login existente")]
+        //[System.Web.Mvc.Remote("loginExistente", "Loginn", ErrorMessage = "Login existente")]
         public string login { get; set; }
 
         [Required(ErrorMessage = "Campo vazio", AllowEmptyStrings = false)]

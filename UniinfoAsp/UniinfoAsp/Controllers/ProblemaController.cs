@@ -98,9 +98,17 @@ namespace UniinfoAsp.Controllers
         public ActionResult DeleteConfirmed(int id)
         {
             Problema problema = db.Problemas.Find(id);
-            db.Problemas.Remove(problema);
-            db.SaveChanges();
-            return RedirectToAction("Index");
+            if (db.Chamadoes.Any(c => c.idProblema == problema.idProblema))
+            {
+                ViewBag.Message = "Se o Problema estiver relacionado a um chamado ele não poderá ser apagado";
+            }
+            else
+            {
+                db.Problemas.Remove(problema);
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(problema);
         }
 
         protected override void Dispose(bool disposing)
