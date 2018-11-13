@@ -123,4 +123,13 @@ namespace UniinfoAsp.Controllers
             base.Dispose(disposing);
         }
     }
+
+    //[Authorize(Roles = "")]
+    //public class error : Controller
+    //{
+    //    public ActionResult erro()
+    //    {
+    //        return RedirectToAction("Account/Login");
+    //    }
+    //}
 }

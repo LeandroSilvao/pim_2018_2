@@ -21,7 +21,7 @@ namespace UniinfoAsp.Controllers
             var loginns = db.Loginns.Include(l => l.Funcionario).Include(l => l.nivelAcesso);
             return View(loginns.ToList());
         }
-
+        
         // GET: Loginn/Details/5
         public ActionResult Details(int? id)
         {
@@ -41,12 +41,14 @@ namespace UniinfoAsp.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult detailsDeleteConfirmed(int id)
         {
+
+
             Loginn loginn = db.Loginns.Find(id);
             db.Loginns.Remove(loginn);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
-
+        
         // GET: Loginn/Create
         public ActionResult Create()
         {
@@ -74,10 +76,10 @@ namespace UniinfoAsp.Controllers
             return View(loginn);
         }
 
-        //public JsonResult loginExistente(string login)
-        //{
-        //    return Json(!db.Loginns.Any(l => l.login == login), JsonRequestBehavior.AllowGet);
-        //}
+        public JsonResult loginexistente(string login)
+        {
+            return Json(!db.Loginns.Any(l => l.login == login), JsonRequestBehavior.AllowGet);
+        }
 
         // GET: Loginn/Edit/5
         public ActionResult Edit(int? id)
@@ -113,7 +115,7 @@ namespace UniinfoAsp.Controllers
             ViewBag.idNivelAcesso = new SelectList(db.nivelAcessoes, "idNivelAcesso", "tipoAcesso", loginn.idNivelAcesso);
             return View(loginn);
         }
-
+        
         // GET: Loginn/Delete/5
         public ActionResult Delete(int? id)
         {
@@ -138,7 +140,6 @@ namespace UniinfoAsp.Controllers
             if(loginn.login.Equals("jw"))
             {
                 ViewBag.Message = "Este login não pode ser apagado";
-
             }
             else
             {

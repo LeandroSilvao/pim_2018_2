@@ -45,7 +45,7 @@ namespace UniinfoAsp.Models
         public int idNivelAcesso { get; set; }
 
         [Required(ErrorMessage = "Campo vazio", AllowEmptyStrings = false)]
-        //[System.Web.Mvc.Remote("loginExistente", "Loginn", ErrorMessage = "Login existente")]
+        [System.Web.Mvc.Remote("loginExistente", "Loginn", ErrorMessage = "Login existente")]
         public string login { get; set; }
 
         [Required(ErrorMessage = "Campo vazio", AllowEmptyStrings = false)]
